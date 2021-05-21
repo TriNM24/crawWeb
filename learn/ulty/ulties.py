@@ -25,25 +25,19 @@ def optional_arg_decorator(fn):
     return wrapped_decorator
 
 
-def log(f):
-    def wrapper(*args, **kwargs):
-        print('hey log start')
-        f(*args, **kwargs)
-        print('hey log end')
-    return wrapper
-
-
 def log2(f):
     def wrapper(*args, **kwargs):
-        with open('somefile.txt', 'a') as the_file:
-            the_file.write('start function:{}\n'.format(f.__name__))
-        print('start function:{}'.format(f.__name__))
+        writeLog('start function:{}'.format(f.__name__))
         result = f(*args, **kwargs)
-        print('end function:{}'.format(f.__name__))
-        with open('somefile.txt', 'a') as the_file:
-            the_file.write('end function:{}\n'.format(f.__name__))
+        writeLog('end function:{}'.format(f.__name__))
         return result
     return wrapper
+
+
+def writeLog(message):
+    print(message)
+    with open('runLog.txt', 'a') as the_file:
+        the_file.write("{}\n".format(message))
 
 
 @log2
