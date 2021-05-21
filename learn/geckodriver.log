@@ -1,0 +1,463 @@
+1621561856893	geckodriver	INFO	Listening on 127.0.0.1:62436
+1621561859973	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileAUdnh6"
+1621561861394	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621561863997	Marionette	INFO	Listening on port 62446
+1621561864241	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621562174894	Marionette	INFO	Stopped listening on port 62446
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilezPVpw9"
+1621562163997	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621562166117	Marionette	INFO	Listening on port 56615
+1621562166462	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621562173994	Marionette	INFO	Stopped listening on port 56615
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621562232918	geckodriver	INFO	Listening on 127.0.0.1:56748
+1621562236003	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofiles713tj"
+1621562236496	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621562238511	Marionette	INFO	Listening on port 56756
+1621562238697	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621562239639	Marionette	INFO	Stopped listening on port 56756
+[Child 1112, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+[Child 1112, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:544
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\cygwin64\tmp\rust_mozprofiles713tj\protections.sqlite
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621562724675	geckodriver	INFO	Listening on 127.0.0.1:59328
+1621562727752	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofiley1mwGz"
+1621562728164	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621562730350	Marionette	INFO	Listening on port 59336
+1621562730461	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621563391394	Marionette	INFO	Stopped listening on port 59336
+1562872151	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilea1f7Ti"
+1621562872572	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621562874617	Marionette	INFO	Listening on port 59444
+1621562874856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621562914852	Marionette	INFO	Stopped listening on port 59444
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621562917491	geckodriver	INFO	Listening on 127.0.0.1:52956
+1621562920571	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileEQYN97"
+1621562920990	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621562923259	Marionette	INFO	Listening on port 52965
+1621562923755	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621562923780	Marionette	INFO	Stopped listening on port 52965
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621563138541	geckodriver	INFO	Listening on 127.0.0.1:53050
+1621563141631	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile7RD6Ib"
+1621563142026	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621563144077	Marionette	INFO	Listening on port 53059
+1621563144347	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621563391415	Marionette	INFO	Stopped listening on port 53059
+1563240491	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofileviV3Q5"
+1621563240904	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621563243119	Marionette	INFO	Listening on port 62166
+1621563243196	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621563391436	Marionette	INFO	Stopped listening on port 62166
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileQTm8aC"
+1621563368270	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621563370423	Marionette	INFO	Listening on port 62258
+1621563370525	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621563391448	Marionette	INFO	Stopped listening on port 62258
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621563862495	geckodriver	INFO	Listening on 127.0.0.1:64314
+1621563865595	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilee9AcCP"
+1621563866005	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621563868042	Marionette	INFO	Listening on port 64322
+1621563868302	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621564145375	Marionette	INFO	Stopped listening on port 64322
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621564147794	geckodriver	INFO	Listening on 127.0.0.1:60403
+1621564150895	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileypIWLQ"
+1621564151308	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621564153647	Marionette	INFO	Listening on port 60411
+1621564154099	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621564183319	Marionette	INFO	Stopped listening on port 60411
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621564414845	geckodriver	INFO	Listening on 127.0.0.1:60525
+1621564417925	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile0TbkEQ"
+1621564418353	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621564420520	Marionette	INFO	Listening on port 60534
+1621564420614	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621564480743	Marionette	INFO	Stopped listening on port 60534
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621567627140	geckodriver	INFO	Listening on 127.0.0.1:54174
+1621567630231	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofiletYxEdj"
+1621567631568	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621567635052	Marionette	INFO	Listening on port 54182
+1621567635567	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621568104046	Marionette	INFO	Stopped listening on port 54182
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621568123364	geckodriver	INFO	Listening on 127.0.0.1:54338
+1621568126444	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofileVOAyWN"
+1621568126969	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621568129437	Marionette	INFO	Listening on port 54346
+1621568129609	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621568348742	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+JavaScript error: chrome://marionette/content/driver.js, line 292: TypeError: this.currentSession is null
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6B0027,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621568730771	Marionette	INFO	Stopped listening on port 54346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+nknown module)"))
+1621568726640	Marionette	INFO	Listening on port 54703
+1621568726726	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621568965683	Marionette	INFO	Stopped listening on port 54703
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofileHlRbUD"
+1621568960888	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621568962856	Marionette	INFO	Listening on port 54883
+1621568963157	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621568966818	Marionette	INFO	Stopped listening on port 54883
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621569322948	geckodriver	INFO	Listening on 127.0.0.1:55094
+1621569326042	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilecHpZKO"
+1621569326441	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621569328492	Marionette	INFO	Listening on port 55103
+1621569328745	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.vi.XuFAP8Nv6Yc.es5.O/am=eACA/d=1/excm=_b,_tp,appwidgetnoauthview/ed=1/dg=0/wt=2/rs=AM-SdHv3lsn39aPKfEBMiPOnnXMq7RzadQ/m=_b,_tp, line 441: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.gstatic.com/_/mss/boq-one-google/_/js/k=boq-one-google.OneGoogleWidgetUi.vi.XuFAP8Nv6Yc.es5.O/am=eACA/d=1/excm=_b,_tp,appwidgetnoauthview/ed=1/dg=0/wt=2/rs=AM-SdHv3lsn39aPKfEBMiPOnnXMq7RzadQ/m=_b,_tp, line 441: NS_ERROR_NOT_INITIALIZED: 
+1621569374794	Marionette	INFO	Stopped listening on port 55103
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621569602833	geckodriver	INFO	Listening on 127.0.0.1:52871
+1621569605921	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileRBisE7"
+1621569606344	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621569608348	Marionette	INFO	Listening on port 52879
+1621569608612	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621569917730	geckodriver	INFO	Listening on 127.0.0.1:60435
+1621569920808	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileVZHQzx"
+1621569921228	Marionette	INFO	Marionette enabled
+1621569922738	geckodriver	INFO	Listening on 127.0.0.1:60453
+1621569925785	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileLSJavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. U1621569964435	Marionette	INFO	Stopped listening on port 60505
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+FO	Stopped listening on port 60443
+1621569999142	geckodriver	INFO	Listening on 127.0.0.1:60653
+1621570002224	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileERW3uY"
+1621570002638	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621570004787	Marionette	INFO	Listening on port 60662
+1621570004915	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621570022079	Marionette	INFO	Stopped listening on port 60662
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621570462105	geckodriver	INFO	Listening on 127.0.0.1:58549
+1621570465173	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileZzdP7y"
+1621570465597	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621570467742	Marionette	INFO	Listening on port 58558
+1621570467845	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621570896826	Marionette	INFO	Stopped listening on port 58558
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621571469224	geckodriver	INFO	Listening on 127.0.0.1:63541
+1621571472278	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile0y5oIS"
+1621571472696	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621571474784	Marionette	INFO	Listening on port 63549
+1621571474958	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621571936696	Marionette	INFO	Stopped listening on port 63549
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621571948854	geckodriver	INFO	Listening on 127.0.0.1:63748
+1621571951888	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile1UXDtT"
+1621571952344	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621571954302	Marionette	INFO	Listening on port 63756
+1621571954699	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621571968295	Marionette	INFO	Stopped listening on port 63756
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621571980038	geckodriver	INFO	Listening on 127.0.0.1:63876
+1621571983123	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileM2W02F"
+1621571983537	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621571985791	Marionette	INFO	Listening on port 63884
+1621571985824	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621572558487	Marionette	INFO	Stopped listening on port 63884
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621572996915	geckodriver	INFO	Listening on 127.0.0.1:64103
+1621572999968	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilerfGaWL"
+1621573000384	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621573002423	Marionette	INFO	Listening on port 64111
+1621573002659	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621573211527	Marionette	INFO	Stopped listening on port 64111
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621579282805	geckodriver	INFO	Listening on 127.0.0.1:62706
+1621579285909	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofilejcbfMf"
+1621579286325	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621579288389	Marionette	INFO	Listening on port 62714
+1621579288578	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621579843629	Marionette	INFO	Stopped listening on port 62714
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofileZixEFG"
+1621579330048	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621579332006	Marionette	INFO	Listening on port 62854
+1621579332401	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621579346749	Marionette	INFO	Stopped listening on port 62854
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621579834687	geckodriver	INFO	Listening on 127.0.0.1:63055
+1621579837750	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofile0JLbO5"
+1621579838185	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621579840524	Marionette	INFO	Listening on port 63063
+1621579840955	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621579934299	Marionette	INFO	Stopped listening on port 63063
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621582602216	geckodriver	INFO	Listening on 127.0.0.1:50765
+1621582605307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofilejNhOV9"
+1621582607205	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621582612340	Marionette	INFO	Listening on port 50773
+162151621582615282	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla 1621582768547	Marionette	INFO	Stopped listening on port 50773
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+te	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621582617805	Marionette	INFO	Listening on port 50844
+1621582617981	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 1692, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621582769988	Marionette	INFO	Stopped listening on port 50844
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621582822710	geckodriver	INFO	Listening on 127.0.0.1:51004
+1621582825779	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofilekhkhvO"
+1621582826466	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621582828863	Marionette	INFO	Listening on port 51013
+1621582828995	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621582917760	Marionette	INFO	Stopped listening on port 51013
+1621583123229	geckodriver	INFO	Listening on 127.0.0.1:51177
+1621583126306	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\NGUYEN~1\\AppData\\Local\\Temp\\rust_mozprofileF4h9zE"
+1621583126741	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621583129127	Marionette	INFO	Listening on port 51185
+1621583129523	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621583160958	Marionette	INFO	Stopped listening on port 51185
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621583959013	geckodriver	INFO	Listening on 127.0.0.1:51416
+1621583962090	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileJ9O6m9"
+1621583962526	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1621583973863	Marionette	INFO	Listening on port 51426
+1621583974633	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://media1.admicro.vn/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://adi.admicro.vn/adt/cpc/tvcads/files/js/core/adm-tracking.js?v=0.3143327708021627, line 3: unreachable code after return statement
+JavaScript warning: https://adi.admicro.vn/adt/cpc/tvcads/files/js/core/adm-tracking.js?v=0.3143327708021627, line 3: unreachable code after return statement
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621584358096	Marionette	INFO	Stopped listening on port 51426
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621590201406	geckodriver	INFO	Listening on 127.0.0.1:61019
+1621590204503	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile2OTQ1i"
+1621590204933	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621590207061	Marionette	INFO	Listening on port 61027
+1621590207172	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621590289800	Marionette	INFO	Stopped listening on port 61027
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621590326165	geckodriver	INFO	Listening on 127.0.0.1:53815
+1621590329266	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilejagkTb"
+1621590329674	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621590331764	Marionette	INFO	Listening on port 53824
+1621590331926	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621590364109	Marionette	INFO	Stopped listening on port 53824
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621590506110	geckodriver	INFO	Listening on 127.0.0.1:53959
+1621590509200	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilehuCm0Y"
+1621590509631	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621590511585	Marionette	INFO	Listening on port 53967
+1621590511902	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621590583435	Marionette	INFO	Stopped listening on port 53967
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621590609872	geckodriver	INFO	Listening on 127.0.0.1:54049
+1621590612961	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile1bREYV"
+1621590613372	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621590615561	Marionette	INFO	Listening on port 54057
+1621590615641	Marionette	WARN	TLS certificate errors will be ignored for this session
+1621590874191	Marionette	INFO	Stopped listening on port 54057
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1621590886639	geckodriver	INFO	Listening on 127.0.0.1:59582
+1621590889715	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile3RS00n"
+1621590890133	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1621590892320	Marionette	INFO	Listening on port 59591
+1621590892376	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621591426666	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+1621591438977	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'loading'.
