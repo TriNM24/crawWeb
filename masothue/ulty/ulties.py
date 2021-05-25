@@ -20,8 +20,9 @@ def log(f):
 
 def writeLog(message):
     print(message)
-    with open('runLog.txt', 'a') as the_file:
-        the_file.write("{}\n".format(message))
+    message = "{}\n".format(message)
+    with open('runLog.txt', 'a',  encoding='utf-8') as the_file:
+        the_file.write(message)
 
 
 @log
