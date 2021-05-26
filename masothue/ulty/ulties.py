@@ -5,7 +5,8 @@ from subprocess import Popen
 import subprocess
 import time
 
-SELENIUM_SESSION_FILE = './firefox_session'
+# SELENIUM_SESSION_FILE = './firefox_session'
+SELENIUM_SESSION_FILE = 'firefox_session'
 RUN_PATH_TIME = 0
 
 
@@ -34,7 +35,7 @@ def writeData(message, fileName):
 
 # @log
 def build_driver():
-    if os.path.isfile(SELENIUM_SESSION_FILE):
+    try:
         session_file = open(SELENIUM_SESSION_FILE)
         session_info = session_file.readlines()
         session_file.close()
@@ -45,19 +46,19 @@ def build_driver():
         driver = create_driver_session(session_id, executor_url)
         try:
             title = driver.title
-            print("Success")
+            print("Success: {}".format(title))
             return driver
         except Exception as ex:
-            print("Error")
+            print("Error: {}".format(ex))
             os.remove(SELENIUM_SESSION_FILE)
             return build_driver()
-    else:
-        print('session file is not exist.')
+    except Exception as ex:
+        print('session file is not exist: {}'.format(ex))
         global RUN_PATH_TIME
         if(RUN_PATH_TIME < 1):
             runZombieBrower('runzombi.bat')
             RUN_PATH_TIME = RUN_PATH_TIME + 1
-            time.sleep(20)
+            time.sleep(10)
             return build_driver()
         else:
             quit()

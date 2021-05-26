@@ -5,13 +5,14 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 import sys
+from selenium.webdriver.common.keys import Keys
+import time
+
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
 
-# scroll to element
 
-
-def scroll_shim(passed_in_driver, object):
+def scroll_shim(passed_in_driver, object):  # scroll to element
     x = object.location['x']
     y = object.location['y']
     scroll_by_coord = 'window.scrollTo(%s,%s);' % (x, y)
@@ -24,9 +25,9 @@ def getDataOnePage(passedDriver, provineName):
     # get data
     print(passedDriver.title)
     xpathData = "//div[@class='tax-listing']"
-    element = WebDriverWait(driver, 10).until(
+    element = WebDriverWait(passedDriver, 20).until(
         EC.presence_of_element_located((By.XPATH, xpathData)))
-    scroll_shim(driver, element)
+    scroll_shim(passedDriver, element)
     companies = element.find_elements_by_xpath("./div")
     # test company 1
     # print(companies[0].get_attribute('innerHTML'))
@@ -53,9 +54,9 @@ def getDataProvine(passedDriver, provineName):
     # move to next page
     xpathPageNumber = "//ul[@class='page-numbers']"
     xpathCurrentPageNumber = "//ul[@class='page-numbers']/li/span"
-    element = WebDriverWait(driver, 10).until(
+    element = WebDriverWait(passedDriver, 20).until(
         EC.presence_of_element_located((By.XPATH, xpathPageNumber)))
-    scroll_shim(driver, element)
+    scroll_shim(passedDriver, element)
     pages = element.find_elements_by_xpath("./li")
     isHaveCurrent = False
     nexpageNum = 0
@@ -73,7 +74,7 @@ def getDataProvine(passedDriver, provineName):
             print("____________next page____________:{}".format(nexpageNum))
             nexPage.click()
             break
-    elementCurrentPage = WebDriverWait(passedDriver, 10).until(
+    elementCurrentPage = WebDriverWait(passedDriver, 20).until(
         EC.presence_of_element_located((By.XPATH, xpathCurrentPageNumber)))
     currentPageNumber = elementCurrentPage.get_attribute('innerHTML')
     if(currentPageNumber == nexpageNum):
@@ -92,19 +93,51 @@ try:
         EC.presence_of_element_located((By.XPATH, xpathProvines)))
 except Exception as ex:
     print("Have advertisement")
+    # option 1
+    driver.find_element_by_xpath("//body").click()
+    # option 2
     element = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, xpathDismiss)))
     element.click()
+# click to prenvet popup advertisement
+driver.find_element_by_xpath("//body").click()
 
 provinesElement = driver.find_element_by_xpath(xpathProvines)
 provines = provinesElement.find_elements_by_xpath("./li/a")
-# for provine in provines:
-#     print(provine.get_attribute('innerHTML'))
-# go to and click provine
-action = ActionChains(driver)
-action.move_to_element(provines[28])
-provines[28].click()
-# start get data of provine
-getDataProvine(driver, "Ho_Chi_Minh")
 
+# action = ActionChains(driver)
+# scroll_shim(driver, provines[0])
+# action.move_to_element(provines[0]).key_down(Keys.CONTROL).click(
+#     provines[0]).key_up(Keys.CONTROL).perform()
+
+# quit()
+count = 0
+for provine in provines:
+    if(count < 200):
+        count = count + 1
+        provineTitle = provine.get_attribute('innerHTML')
+        provineTitle = provineTitle[provineTitle.find("/span>")+6:].strip()
+        ulties.writeData("_______{}_______".format(provineTitle), "DataCraw")
+        # open link with new tab
+        action = ActionChains(driver)
+        scroll_shim(driver, provine)
+        action.move_to_element(provine).key_down(Keys.CONTROL).click(
+            provine).key_up(Keys.CONTROL).perform()
+        # provines[28].click()
+        # switch tab to last
+        driver.switch_to.window(driver.window_handles[-1])
+        # start get data of provine
+        # print(driver.title)
+        getDataProvine(driver, "DataCraw")
+        # close all tabs without first tab
+        firstTime = True
+        for handle in driver.window_handles:
+            driver.switch_to.window(handle)
+            if(not firstTime):
+                driver.close()
+            firstTime = False
+        driver.switch_to.window(driver.window_handles[0])
+        time.sleep(5)
+    else:
+        break
 quit()
