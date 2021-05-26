@@ -25,7 +25,14 @@ def writeLog(message):
         the_file.write(message)
 
 
-@log
+def writeData(message, fileName):
+    print(message)
+    message = "{}\n".format(message)
+    with open('{}.txt'.format(fileName), 'a',  encoding='utf-8') as the_file:
+        the_file.write(message)
+
+
+# @log
 def build_driver():
     if os.path.isfile(SELENIUM_SESSION_FILE):
         session_file = open(SELENIUM_SESSION_FILE)
