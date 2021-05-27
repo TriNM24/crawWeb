@@ -4,6 +4,10 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from subprocess import Popen
 import subprocess
 import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+import re
 
 # SELENIUM_SESSION_FILE = './firefox_session'
 SELENIUM_SESSION_FILE = 'firefox_session'
@@ -58,7 +62,7 @@ def build_driver():
         if(RUN_PATH_TIME < 1):
             runZombieBrower('runzombi.bat')
             RUN_PATH_TIME = RUN_PATH_TIME + 1
-            time.sleep(10)
+            time.sleep(20)
             return build_driver()
         else:
             quit()
@@ -92,3 +96,19 @@ def create_driver_session(session_id, executor_url):
 
 def runZombieBrower(file_path):
     Popen(file_path, creationflags=subprocess.CREATE_NEW_CONSOLE)
+
+
+def cleanhtml(raw_html):
+    cleanr = re.compile('<.*?>')
+    cleantext = re.sub(cleanr, '', raw_html)
+    return cleantext
+
+
+def closeOtherTabs(passedDriver):
+    firstTime = True
+    for handle in passedDriver.window_handles:
+        passedDriver.switch_to.window(handle)
+        if(not firstTime):
+            passedDriver.close()
+        firstTime = False
+    passedDriver.switch_to.window(passedDriver.window_handles[0])

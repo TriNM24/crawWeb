@@ -7,6 +7,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 import sys
 from selenium.webdriver.common.keys import Keys
 import time
+from random import seed
+from random import randint
 
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
@@ -29,8 +31,6 @@ def getDataOnePage(passedDriver, provineName):
         EC.presence_of_element_located((By.XPATH, xpathData)))
     scroll_shim(passedDriver, element)
     companies = element.find_elements_by_xpath("./div")
-    # test company 1
-    # print(companies[0].get_attribute('innerHTML'))
     for company in companies:
         title = company.find_element_by_xpath(
             "./h3/a").get_attribute('innerHTML')
@@ -40,17 +40,21 @@ def getDataOnePage(passedDriver, provineName):
             "./div/em/a").get_attribute('innerHTML')
         address = company.find_element_by_xpath(
             "./address").get_attribute('innerHTML')
-        addressResult = address[address.find("/i>")+3:].strip()
+        addressResult = ulties.cleanhtml(address).strip()
         print(title)
         print(taxNumber)
         print(owner)
-        print(address)
+        print(addressResult)
         ulties.writeData("{}\n{}\n{}\n{}".format(
             title, taxNumber, owner, addressResult), provineName)
+        # testt
+        quit()
 
 
 def getDataProvine(passedDriver, provineName):
     getDataOnePage(passedDriver, provineName)
+    # testt
+    quit()
     # move to next page
     xpathPageNumber = "//ul[@class='page-numbers']"
     xpathCurrentPageNumber = "//ul[@class='page-numbers']/li/span"
@@ -84,36 +88,21 @@ def getDataProvine(passedDriver, provineName):
 
 
 print('start')
+# seed random number generator
+seed(1)
 driver = ulties.build_driver()
 driver.get('https://masothue.com/')
 xpathProvines = "//ul[@class='row']"
-xpathDismiss = "//div[@id = 'dismiss-button']"
-try:
-    element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, xpathProvines)))
-except Exception as ex:
-    print("Have advertisement")
-    # option 1
-    driver.find_element_by_xpath("//body").click()
-    # option 2
-    element = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.XPATH, xpathDismiss)))
-    element.click()
-# click to prenvet popup advertisement
-driver.find_element_by_xpath("//body").click()
+
+element = WebDriverWait(driver, 10).until(
+    EC.presence_of_element_located((By.XPATH, xpathProvines)))
 
 provinesElement = driver.find_element_by_xpath(xpathProvines)
 provines = provinesElement.find_elements_by_xpath("./li/a")
 
-# action = ActionChains(driver)
-# scroll_shim(driver, provines[0])
-# action.move_to_element(provines[0]).key_down(Keys.CONTROL).click(
-#     provines[0]).key_up(Keys.CONTROL).perform()
-
-# quit()
 count = 0
 for provine in provines:
-    if(count < 200):
+    if(count < 1):
         count = count + 1
         provineTitle = provine.get_attribute('innerHTML')
         provineTitle = provineTitle[provineTitle.find("/span>")+6:].strip()
@@ -121,15 +110,20 @@ for provine in provines:
         # open link with new tab
         action = ActionChains(driver)
         scroll_shim(driver, provine)
+        # wait before open new tab
+        wait = randint(10, 30)
+        print("Wait {} second to open provine".format(wait))
+        time.sleep(wait)
         action.move_to_element(provine).key_down(Keys.CONTROL).click(
             provine).key_up(Keys.CONTROL).perform()
-        # provines[28].click()
         # switch tab to last
         driver.switch_to.window(driver.window_handles[-1])
         # start get data of provine
-        # print(driver.title)
         getDataProvine(driver, "DataCraw")
         # close all tabs without first tab
+        wait = randint(10, 30)
+        print("Wait {} second to close provine tab".format(wait))
+        time.sleep(wait)
         firstTime = True
         for handle in driver.window_handles:
             driver.switch_to.window(handle)
