@@ -48,6 +48,7 @@ def build_driver():
         "\n",
     ])
     time.sleep(5)
+    driver.add_cookie({"name": "foo", "value": "value", 'sameSite': 'Strict'})
     session_file.close()
     # close other tabs
     ulties.closeOtherTabs(driver)

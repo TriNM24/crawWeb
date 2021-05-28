@@ -100,7 +100,27 @@ print('start')
 # seed random number generator
 seed(1)
 driver = ulties.build_driver()
-driver.get('https://masothue.com/')
+driver.get(
+    'https://masothue.com/1602147918-cong-ty-tnhh-mot-thanh-vien-xuat-nhap-khau-canh-minh')
+
+tableInforXpath = "//table[@class='table-taxinfo']"
+tableInfor = driver.find_element_by_xpath(tableInforXpath)
+
+companyNameXpath = "./thead//span"
+companyName = tableInfor.find_element_by_xpath(
+    companyNameXpath).get_attribute('innerHTML')
+print(companyName)
+
+informationsXpath = "./tbody/tr"
+informations = tableInfor.find_elements_by_xpath(informationsXpath)
+for information in informations:
+    info = information.find_element_by_xpath(
+        ".//span").get_attribute('innerHTML')
+    info = ulties.cleanhtml(info)
+    print(info)
+
+quit()
+
 xpathProvines = "//ul[@class='row']"
 
 element = WebDriverWait(driver, 10).until(
