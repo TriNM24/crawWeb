@@ -9,6 +9,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 from random import seed
 from random import randint
+from selenium.common.exceptions import NoSuchElementException
 
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
@@ -113,11 +114,20 @@ print(companyName)
 
 informationsXpath = "./tbody/tr"
 informations = tableInfor.find_elements_by_xpath(informationsXpath)
+dataXpath1 = ".//span"
+dataXpath2 = ".//a"
 for information in informations:
-    info = information.find_element_by_xpath(
-        ".//span").get_attribute('innerHTML')
-    info = ulties.cleanhtml(info)
-    print(info)
+    try:
+        info = information.find_element_by_xpath(dataXpath1)
+    except NoSuchElementException as ex:
+        try:
+            info = information.find_element_by_xpath(dataXpath2)
+        except Exception as ex:
+            info = None
+            print("Handle exception {}".format(ex))
+    if(info != None):
+        data = ulties.cleanhtml(info.get_attribute('innerHTML'))    
+        print(data)    
 
 quit()
 
