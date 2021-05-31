@@ -116,6 +116,7 @@ informationsXpath = "./tbody/tr"
 informations = tableInfor.find_elements_by_xpath(informationsXpath)
 dataXpath1 = ".//span"
 dataXpath2 = ".//a"
+# get all tax info
 for information in informations:
     try:
         info = information.find_element_by_xpath(dataXpath1)
@@ -124,10 +125,19 @@ for information in informations:
             info = information.find_element_by_xpath(dataXpath2)
         except Exception as ex:
             info = None
-            print("Handle exception {}".format(ex))
     if(info != None):
         data = ulties.cleanhtml(info.get_attribute('innerHTML'))    
         print(data)    
+
+# get all business
+tableBusinessXpath = "//table[@class='table']"
+tableBusiness = driver.find_element_by_xpath(tableBusinessXpath)
+businessXpath = "./tbody/tr/td[2]//a"
+businesses = tableBusiness.find_elements_by_xpath(businessXpath)
+print("___Business___")
+for business in businesses:
+    data = ulties.cleanhtml(business.get_attribute('innerHTML'))
+    print(data) 
 
 quit()
 
