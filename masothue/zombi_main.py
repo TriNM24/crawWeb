@@ -24,8 +24,8 @@ def build_driver():
     options.add_argument(f'user-agent={user_agent}')
 
     profile = webdriver.FirefoxProfile()
-    profile.add_extension(
-        extension='./extensions/touch_vpn_secure_vpn_proxy_for_unlimited_access-4.2.1-fx.xpi')
+    # profile.add_extension(
+    #     extension='./extensions/touch_vpn_secure_vpn_proxy_for_unlimited_access-4.2.1-fx.xpi')
     profile.set_preference("general.useragent.override", user_agent)
     profile.add_extension(extension='./extensions/adblock_plus-3.11-an+fx.xpi')
     profile.add_extension(
