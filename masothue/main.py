@@ -1,3 +1,4 @@
+import random
 import os
 import ulty.ulties as ulties
 from selenium.webdriver.support.ui import WebDriverWait
@@ -7,8 +8,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import sys
 from selenium.webdriver.common.keys import Keys
 import time
-from random import seed
-from random import randint
+from selenium.common.exceptions import NoSuchElementException
 
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
@@ -23,6 +23,42 @@ def scroll_shim(passed_in_driver, object):  # scroll to element
     passed_in_driver.execute_script(scroll_nav_out_of_way)
 
 
+def getdataDetail(passedDriver, provineName):
+    tableInforXpath = "//table[@class='table-taxinfo']"
+    tableInfor = passedDriver.find_element_by_xpath(tableInforXpath)
+    companyNameXpath = "./thead//span"
+    companyName = tableInfor.find_element_by_xpath(
+        companyNameXpath).get_attribute('innerHTML')
+    print(companyName)
+
+    informationsXpath = "./tbody/tr"
+    informations = tableInfor.find_elements_by_xpath(informationsXpath)
+    dataXpath1 = ".//span"
+    dataXpath2 = ".//a"
+    # get all tax info
+    for information in informations:
+        try:
+            info = information.find_element_by_xpath(dataXpath1)
+        except NoSuchElementException as ex:
+            try:
+                info = information.find_element_by_xpath(dataXpath2)
+            except Exception as ex:
+                info = None
+        if(info != None):
+            data = ulties.cleanhtml(info.get_attribute('innerHTML'))
+            ulties.writeData(data, provineName)
+
+    # get all business
+    tableBusinessXpath = "//table[@class='table']"
+    tableBusiness = passedDriver.find_element_by_xpath(tableBusinessXpath)
+    businessXpath = "./tbody/tr/td[2]//a"
+    businesses = tableBusiness.find_elements_by_xpath(businessXpath)
+    ulties.writeData('___Business___')
+    for business in businesses:
+        data = ulties.cleanhtml(business.get_attribute('innerHTML'))
+        ulties.writeData(data, provineName)
+
+
 def getDataOnePage(passedDriver, provineName):
     # get data
     print(passedDriver.title)
@@ -32,34 +68,27 @@ def getDataOnePage(passedDriver, provineName):
     scroll_shim(passedDriver, element)
     companies = element.find_elements_by_xpath("./div")
     for company in companies:
+        passedDriver.switch_to.window(passedDriver.window_handles[-1])
         titleDetail = company.find_element_by_xpath("./h3/a")
-        scroll_shim(driver, titleDetail)
+        scroll_shim(passedDriver, titleDetail)
         # wait before open new tab
-        wait = randint(10, 30)
+        wait = random.randint(10, 30)
         print("Wait {} second to open detail".format(wait))
         time.sleep(wait)
         # go to detail
-        action = ActionChains(driver)
+        action = ActionChains(passedDriver)
         action.move_to_element(titleDetail).key_down(Keys.CONTROL).click(
             titleDetail).key_up(Keys.CONTROL).perform()
-
-        # taxNumber = company.find_element_by_xpath(
-        #     "./div/a").get_attribute('innerHTML')
-        # owner = company.find_element_by_xpath(
-        #     "./div/em/a").get_attribute('innerHTML')
-        # address = company.find_element_by_xpath(
-        #     "./address").get_attribute('innerHTML')
-        # addressResult = ulties.cleanhtml(address).strip()
-        # ulties.writeData("{}\n{}\n{}\n{}".format(
-        #     title, taxNumber, owner, addressResult), provineName)
-
-        # wait before open new tab
-        wait = randint(10, 30)
+        # switch tab to last
+        passedDriver.switch_to.window(passedDriver.window_handles[-1])
+        getdataDetail(passedDriver, provineName)
+        # wait before close detail tab
+        wait = random.randint(10, 30)
         print("Wait {} second to close detail".format(wait))
         time.sleep(wait)
-
-        # testt
-        quit()
+        # switch tab to last
+        passedDriver.switch_to.window(passedDriver.window_handles[-1])
+        passedDriver.close()
 
 
 def getDataProvine(passedDriver, provineName):
@@ -98,7 +127,9 @@ def getDataProvine(passedDriver, provineName):
 
 print('start')
 # seed random number generator
-seed(1)
+random.seed(time.perf_counter())
+# test
+
 driver = ulties.build_driver()
 driver.get('https://masothue.com/')
 xpathProvines = "//ul[@class='row']"
@@ -120,7 +151,7 @@ for provine in provines:
         action = ActionChains(driver)
         scroll_shim(driver, provine)
         # wait before open new tab
-        wait = randint(10, 30)
+        wait = random.randint(10, 30)
         print("Wait {} second to open provine".format(wait))
         time.sleep(wait)
         action.move_to_element(provine).key_down(Keys.CONTROL).click(
@@ -130,7 +161,7 @@ for provine in provines:
         # start get data of provine
         getDataProvine(driver, "DataCraw")
         # close all tabs without first tab
-        wait = randint(10, 30)
+        wait = random.randint(10, 30)
         print("Wait {} second to close provine tab".format(wait))
         time.sleep(wait)
         firstTime = True

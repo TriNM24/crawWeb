@@ -101,6 +101,7 @@ print('start')
 # seed random number generator
 seed(1)
 driver = ulties.build_driver()
+
 driver.get(
     'https://masothue.com/1602147918-cong-ty-tnhh-mot-thanh-vien-xuat-nhap-khau-canh-minh')
 
@@ -126,8 +127,8 @@ for information in informations:
         except Exception as ex:
             info = None
     if(info != None):
-        data = ulties.cleanhtml(info.get_attribute('innerHTML'))    
-        print(data)    
+        data = ulties.cleanhtml(info.get_attribute('innerHTML'))
+        print(data)
 
 # get all business
 tableBusinessXpath = "//table[@class='table']"
@@ -137,8 +138,9 @@ businesses = tableBusiness.find_elements_by_xpath(businessXpath)
 print("___Business___")
 for business in businesses:
     data = ulties.cleanhtml(business.get_attribute('innerHTML'))
-    print(data) 
+    print(data)
 
+input()
 quit()
 
 xpathProvines = "//ul[@class='row']"

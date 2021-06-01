@@ -5,6 +5,7 @@ from random_user_agent.user_agent import UserAgent
 from random_user_agent.params import SoftwareName, OperatingSystem
 import ulty.ulties as ulties
 import time
+from selenium.webdriver.common.proxy import Proxy, ProxyType
 
 SELENIUM_SESSION_FILE = './firefox_session'
 
@@ -23,18 +24,29 @@ def build_driver():
     # options.add_argument("--no-sandbox")
     # options.add_argument("--window-size=1420,1080")
     # options.add_argument("--disable-gpu")
-    options.add_argument(f'user-agent={user_agent}')    
+    options.add_argument(f'user-agent={user_agent}')
 
     profile = webdriver.FirefoxProfile()
-    # profile.add_extension(
-    #     extension='./extensions/touch_vpn_secure_vpn_proxy_for_unlimited_access-4.2.1-fx.xpi')
     profile.set_preference("general.useragent.override", user_agent)
+    profile.add_extension(
+        extension='./extensions/touch_vpn_secure_vpn_proxy_for_unlimited_access-4.2.1-fx.xpi')
     profile.add_extension(extension='./extensions/adblock_plus-3.11-an+fx.xpi')
     profile.add_extension(
         extension='./extensions/adblock_for_firefox-4.33.0-fx.xpi')
     # just for test
     # firefox_binary = 'C:/Program Files/Firefox Developer Edition/firefox.exe'
     # firefox_binary = 'C:/Program Files/Mozilla Firefox/firefox.exe'
+
+    # myProxy = "105.112.1.166:8080"
+    # firefox_capabilities = webdriver.DesiredCapabilities.FIREFOX
+    # firefox_capabilities['marionette'] = True
+    # firefox_capabilities['proxy'] = {
+    #     "proxyType": "MANUAL",
+    #     "httpProxy": myProxy,
+    #     "ftpProxy": myProxy,
+    #     "sslProxy": myProxy
+    # }
+
     driver = webdriver.Firefox(
         firefox_profile=profile, firefox_binary=None, options=options)
     # install extension
@@ -49,9 +61,8 @@ def build_driver():
         driver.session_id,
         "\n",
     ])
-    time.sleep(5)
-    driver.add_cookie({"name": "foo", "value": "value", 'sameSite': 'Strict'})
     session_file.close()
+    time.sleep(5)
     # close other tabs
     ulties.closeOtherTabs(driver)
     return driver
