@@ -202,6 +202,7 @@ def getDataProvineReLoad(passedDriver, elementProvine, provineName):
     action.move_to_element(elementProvine).key_down(Keys.CONTROL).click(
         elementProvine).key_up(Keys.CONTROL).perform()
     passedDriver.switch_to.window(passedDriver.window_handles[-1])
+    value = input("SCRIPT ENDED\n")
     quit()
     # test
     # start get data of provine
