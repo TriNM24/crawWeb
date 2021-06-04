@@ -84,20 +84,7 @@ def create_driver_session(session_id, executor_url):
     # Patch the function before creating the driver object
     RemoteWebDriver.execute = new_command_execute
 
-    # test add proxy for web
-    PROXY = "182.160.124.26:8081"
-    webdriver.DesiredCapabilities.FIREFOX['proxy'] = {
-        "httpProxy": PROXY,
-        "ftpProxy": PROXY,
-        "sslProxy": PROXY,
-        "noProxy": None,
-        "proxyType": "MANUAL",
-        "class": "org.openqa.selenium.Proxy",
-        "autodetect": False
-    }
-
-    new_driver = webdriver.Remote(
-        command_executor=executor_url, desired_capabilities=webdriver.DesiredCapabilities.FIREFOX)
+    new_driver = webdriver.Remote(command_executor=executor_url)
     new_driver.session_id = session_id
 
     # Replace the patched function with original function

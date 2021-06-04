@@ -1,5 +1,4 @@
 import random
-import os
 import ulty.ulties as ulties
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,6 +8,12 @@ import sys
 from selenium.webdriver.common.keys import Keys
 import time
 from selenium.common.exceptions import NoSuchElementException
+from seleniumwire import webdriver
+import os
+from selenium.webdriver.firefox.options import Options
+from random_user_agent.user_agent import UserAgent
+from random_user_agent.params import SoftwareName, OperatingSystem
+
 
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
@@ -22,6 +27,18 @@ def getRandomTime():
     max = random.randint(30, 40)
     wait = random.randint(min, max)
     return wait
+
+
+currentPath = ''
+
+
+def interceptorRequest(request):
+    global currentPath
+    if(request.path == '/' or request.path == currentPath):
+        ulties.writeLog('Allow request: {}'.format(request.path))
+    else:
+        ulties.writeLog('Abord request: {}'.format(request.path))
+        request.abort()
 
 
 def scroll_shim(passed_in_driver, object):  # scroll to element
@@ -177,11 +194,16 @@ def getDataProvine(passedDriver, provineName):
 
 def getDataProvineReLoad(passedDriver, elementProvine, provineName):
     global refreshCount
+    global currentPath
+    currentPath = elementProvine.get_attribute('href')
+    print(currentPath)
     # switch tab to last
     action = ActionChains(driver)
     action.move_to_element(elementProvine).key_down(Keys.CONTROL).click(
         elementProvine).key_up(Keys.CONTROL).perform()
     passedDriver.switch_to.window(passedDriver.window_handles[-1])
+    quit()
+    # test
     # start get data of provine
     result = getDataProvine(passedDriver, provineName)
     if(result == False):
@@ -197,11 +219,59 @@ def getDataProvineReLoad(passedDriver, elementProvine, provineName):
             getDataProvineReLoad(passedDriver, elementProvine, provineName)
 
 
+def build_driver():
+    software_names = [SoftwareName.FIREFOX.value]
+    operating_systems = [
+        OperatingSystem.WINDOWS.value, OperatingSystem.LINUX.value]
+    user_agent_rotator = UserAgent(
+        software_names=software_names, operating_systems=operating_systems, limit=100)
+    user_agent = user_agent_rotator.get_random_user_agent()
+    # test for prevent block
+    user_agent = "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0"
+    options = Options()
+    # options.add_argument("--headless")
+    # options.add_argument("--no-sandbox")
+    # options.add_argument("--disable-gpu")
+    options.add_argument(f'user-agent={user_agent}')
+
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("general.useragent.override", user_agent)
+    profile.add_extension(
+        extension='./extensions/touch_vpn_secure_vpn_proxy_for_unlimited_access-4.2.1-fx.xpi')
+    profile.add_extension(extension='./extensions/adblock_plus-3.11-an+fx.xpi')
+    profile.add_extension(
+        extension='./extensions/adblock_for_firefox-4.33.0-fx.xpi')
+
+    # API_KEY = '7f3282dc1e35451c7037fa93818b0cef'
+    # proxy_options = {
+    #     'proxy': {
+    #         'http': f'http://scraperapi:{API_KEY}@proxy-server.scraperapi.com:8001',
+    #         'https': f'http://scraperapi:{API_KEY}@proxy-server.scraperapi.com:8001',
+    #         'no_proxy': 'localhost,127.0.0.1'
+    #     }
+    # }
+
+    # just for test
+    # firefox_binary = 'C:/Program Files/Firefox Developer Edition/firefox.exe'
+    # firefox_binary = 'C:/Program Files/Mozilla Firefox/firefox.exe'
+
+    driver = webdriver.Firefox(
+        firefox_profile=profile, firefox_binary=None, options=options, seleniumwire_options=None)
+    print("Agent: {}".format(user_agent))
+
+    time.sleep(5)
+    # close other tabs
+    ulties.closeOtherTabs(driver)
+    return driver
+
+
 ulties.writeLog('start')
 # seed random number generator
 random.seed(time.perf_counter())
-driver = ulties.build_driver('runzombi_scraperapi.bat')
-
+driver = build_driver()
+# test
+# driver.request_interceptor = interceptorRequest
+currentPath = '/'
 driver.get('https://masothue.com/')
 xpathProvines = "//ul[@class='row']"
 
