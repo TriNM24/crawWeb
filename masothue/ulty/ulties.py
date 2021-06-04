@@ -38,7 +38,7 @@ def writeData(message, fileName):
 
 
 # @log
-def build_driver():
+def build_driver(runPath):
     try:
         session_file = open(SELENIUM_SESSION_FILE)
         session_info = session_file.readlines()
@@ -55,15 +55,15 @@ def build_driver():
         except Exception as ex:
             print("Error: {}".format(ex))
             os.remove(SELENIUM_SESSION_FILE)
-            return build_driver()
+            return build_driver(runPath)
     except Exception as ex:
         print('session file is not exist: {}'.format(ex))
         global RUN_PATH_TIME
         if(RUN_PATH_TIME < 1):
-            runZombieBrower('runzombi.bat')
+            runZombieBrower(runPath)
             RUN_PATH_TIME = RUN_PATH_TIME + 1
             time.sleep(20)
-            return build_driver()
+            return build_driver(runPath)
         else:
             quit()
 

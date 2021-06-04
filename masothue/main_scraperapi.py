@@ -58,14 +58,18 @@ def getdataDetail(passedDriver, provineName):
                 ulties.writeData(data, provineName)
 
         # get all business
-        tableBusinessXpath = "//table[@class='table']"
-        tableBusiness = passedDriver.find_element_by_xpath(tableBusinessXpath)
-        businessXpath = "./tbody/tr/td[2]//a"
-        businesses = tableBusiness.find_elements_by_xpath(businessXpath)
-        ulties.writeData('___Business___', provineName)
-        for business in businesses:
-            data = ulties.cleanhtml(business.get_attribute('innerHTML'))
-            ulties.writeData(data, provineName)
+        try:
+            tableBusinessXpath = "//table[@class='table']"
+            tableBusiness = passedDriver.find_element_by_xpath(
+                tableBusinessXpath)
+            businessXpath = "./tbody/tr/td[2]//a"
+            businesses = tableBusiness.find_elements_by_xpath(businessXpath)
+            ulties.writeData('___Business___', provineName)
+            for business in businesses:
+                data = ulties.cleanhtml(business.get_attribute('innerHTML'))
+                ulties.writeData(data, provineName)
+        except Exception as ex:
+            ulties.writeLog("Do not have business")
         ulties.writeData('--------------', provineName)
         return True
     except Exception as ex:
@@ -196,7 +200,7 @@ def getDataProvineReLoad(passedDriver, elementProvine, provineName):
 ulties.writeLog('start')
 # seed random number generator
 random.seed(time.perf_counter())
-driver = ulties.build_driver('runzombi.bat')
+driver = ulties.build_driver('runzombi_scraperapi.bat')
 
 driver.get('https://masothue.com/')
 xpathProvines = "//ul[@class='row']"
