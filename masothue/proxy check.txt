@@ -1,0 +1,15 @@
+//free proxy
+https://spys.one/en/free-proxy-list/
+
+//proxy check
+https://proxy6.net/en/checker
+
+https://whatismyip.host/
+
+https://www.scraperapi.com/blog/best-10-free-proxies-and-free-proxy-lists-for-web-scraping/
+
+list checked
+103.94.18.13:8088 ->hanoi, viet nam
+115.77.191.180:53281 ->
+118.70.12.171:53281 ->
+

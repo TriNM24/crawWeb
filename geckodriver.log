@@ -1,0 +1,443 @@
+1623137061057	geckodriver	INFO	Listening on 127.0.0.1:49877
+1623137064100	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileRknJ3b"
+1623137065316	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileRknJ3b\\search.json.mozlz4", (void 0)))
+1623137068804	Marionette	INFO	Listening on port 49886
+1623137068943	Marionette	WARN	TLS certificate errors will be ignored for this session
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+console.error: "Task cancelled"
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+Handler function threw an exception: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannelInternal.remoteAddress]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _onResponseHeader :: line 1043"  data: no]
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1043:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:620:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:729:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1043, column: 0
+console.error: ({})
+Handler function threw an exception: TypeError: can't access property "last" of undefined
+Stack: _getWaitTiming@resource://devtools/server/actors/network-monitor/network-observer.js:1142:1
+_setupHarTimings@resource://devtools/server/actors/network-monitor/network-observer.js:1367:28
+_onTransactionClose@resource://devtools/server/actors/network-monitor/network-observer.js:1090:27
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:623:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:729:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1142, column: 1
+console.error: (new TypeError("can't access property \"last\" of undefined", "resource://devtools/server/actors/network-monitor/network-observer.js", 1142))
+1623137295370	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+Handler function threw an exception: [Exception... "Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIHttpChannelInternal.remoteAddress]"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/server/actors/network-monitor/network-observer.js :: _onResponseHeader :: line 1043"  data: no]
+Stack: _onResponseHeader@resource://devtools/server/actors/network-monitor/network-observer.js:1043:5
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:620:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:729:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1043, column: 0
+console.error: ({})
+Handler function threw an exception: TypeError: can't access property "last" of undefined
+Stack: _getWaitTiming@resource://devtools/server/actors/network-monitor/network-observer.js:1142:1
+_setupHarTimings@resource://devtools/server/actors/network-monitor/network-observer.js:1367:28
+_onTransactionClose@resource://devtools/server/actors/network-monitor/network-observer.js:1090:27
+_dispatchActivity@resource://devtools/server/actors/network-monitor/network-observer.js:623:14
+NetworkObserver.prototype.observeActivity<@resource://devtools/server/actors/network-monitor/network-observer.js:729:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 1142, column: 1
+console.error: (new TypeError("can't access property \"last\" of undefined", "resource://devtools/server/actors/network-monitor/network-observer.js", 1142))
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+1623137530063	Marionette	INFO	Stopped listening on port 49886
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623137549974	geckodriver	INFO	Listening on 127.0.0.1:58106
+1623137553047	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileFeRxZu"
+1623137553523	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileFeRxZu\\search.json.mozlz4", (void 0)))
+1623137556357	Marionette	INFO	Listening on port 58115
+1623137556759	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623137556762	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:58105","noProxy":[],"sslProxy":"127.0.0.1:58105"}
+Marionette threw an error: NotFoundError: WindowGlobalParent.getActor: No such JSWindowActor 'MarionetteCommands'
+getMarionetteCommandsActorProxy/get/<@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:324:65
+unregisterCommandsActor@chrome://marionette/content/actors/MarionetteCommandsParent.jsm:388:15
+GeckoDriver.prototype.deleteSession@chrome://marionette/content/driver.js:2251:3
+onClosed@chrome://marionette/content/server.js:210:17
+close@chrome://marionette/content/transport.js:225:18
+onInputStreamReady@chrome://marionette/content/transport.js:379:14
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'MarionetteCommands'
+JavaScript error: resource://gre/modules/Sqlite.jsm, line 1030: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\cygwin64\tmp\rust_mozprofileFeRxZu\protections.sqlite
+1623137558332	Marionette	INFO	Stopped listening on port 58115
+1623137574811	geckodriver	INFO	Listening on 127.0.0.1:58173
+1623137577915	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile2UhB88"
+1623137578395	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile2UhB88\\search.json.mozlz4", (void 0)))
+1623137581062	Marionette	INFO	Listening on port 58182
+1623137581142	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623137581145	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:58172","noProxy":[],"sslProxy":"127.0.0.1:58172"}
+1623137626710	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1897: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1897: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1897: TypeError: can't access dead object
+JavaScript error: resource://devtools/server/actors/targets/browsing-context.js, line 1897: TypeError: can't access dead object
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: (new TypeError("can't access property \"getFront\", container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2309))
+1623138264716	Marionette	INFO	Stopped listening on port 58182
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623138270544	geckodriver	INFO	Listening on 127.0.0.1:59311
+1623138273646	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileQMkrTD"
+1623138274167	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileQMkrTD\\search.json.mozlz4", (void 0)))
+1623138276918	Marionette	INFO	Listening on port 59320
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623138277371	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623138277374	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59310","noProxy":[],"sslProxy":"127.0.0.1:59310"}
+1623138328107	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623138341420	Marionette	INFO	Stopped listening on port 59320
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623138451107	geckodriver	INFO	Listening on 127.0.0.1:55470
+1623138454212	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilewgyWcS"
+1623138454707	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilewgyWcS\\search.json.mozlz4", (void 0)))
+1623138457893	Marionette	INFO	Listening on port 55479
+1623138457919	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623138457922	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:55469","noProxy":[],"sslProxy":"127.0.0.1:55469"}
+1623138509566	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623138577071	Marionette	INFO	Stopped listening on port 55479
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623138739276	geckodriver	INFO	Listening on 127.0.0.1:50235
+1623138742326	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileWflGTU"
+1623138742881	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileWflGTU\\search.json.mozlz4", (void 0)))
+1623138745212	Marionette	INFO	Listening on port 50245
+1623138745543	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623138745546	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:50234","noProxy":[],"sslProxy":"127.0.0.1:50234"}
+JavaScript error: , line 0: uncaught exception: Object
+1623138910717	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623139100813	Marionette	INFO	Stopped listening on port 50245
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623139129694	geckodriver	INFO	Listening on 127.0.0.1:49383
+1623139132784	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileM49pMn"
+1623139133289	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileM49pMn\\search.json.mozlz4", (void 0)))
+1623139135828	Marionette	INFO	Listening on port 49391
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623139136020	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623139136023	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:49382","noProxy":[],"sslProxy":"127.0.0.1:49382"}
+1623139180795	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1623139505878	Marionette	INFO	Stopped listening on port 49391
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623139643427	geckodriver	INFO	Listening on 127.0.0.1:54501
+1623139646497	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileUonmBe"
+1623139647185	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileUonmBe\\search.json.mozlz4", (void 0)))
+1623139649685	Marionette	INFO	Listening on port 54513
+1623139649716	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623139649720	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:54499","noProxy":[],"sslProxy":"127.0.0.1:54499"}
+1623139695286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623139707377	Marionette	INFO	Stopped listening on port 54513
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590004,name=PHttpChannel::Msg_Cancel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623139718714	geckodriver	INFO	Listening on 127.0.0.1:59623
+1623139721804	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileFHfGb6"
+1623139722272	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileFHfGb6\\search.json.mozlz4", (void 0)))
+1623139724851	Marionette	INFO	Listening on port 59632
+1623139725721	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623139725725	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59622","noProxy":[],"sslProxy":"127.0.0.1:59622"}
+1623140541287	geckodriver	INFO	Listening on 127.0.0.1:50640
+1623140544381	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofiler3ZeeH"
+1623140544831	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofiler3ZeeH\\search.json.mozlz4", (void 0)))
+1623140547391	Marionette	INFO	Listening on port 50649
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623140547566	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623140547569	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:50639","noProxy":[],"sslProxy":"127.0.0.1:50639"}
+1623140574286	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623140594537	Marionette	INFO	Stopped listening on port 50649
+1623140599850	geckodriver	INFO	Listening on 127.0.0.1:56463
+1623140602932	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile1V8noo"
+1623140603376	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile1V8noo\\search.json.mozlz4", (void 0)))
+1623140605957	Marionette	INFO	Listening on port 56472
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623140606833	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623140606837	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:56462","noProxy":[],"sslProxy":"127.0.0.1:56462"}
+1623140681894	geckodriver	INFO	Listening on 127.0.0.1:52291
+1623140684988	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileSdtI0i"
+1623140685406	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileSdtI0i\\search.json.mozlz4", (void 0)))
+1623140688154	Marionette	INFO	Listening on port 59196
+1623140688672	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623140688675	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:52290","noProxy":[],"sslProxy":"127.0.0.1:52290"}
+console.error: "Task cancelled"
+SourceActor threw an exception: Error: Failed to fetch https://www.instagram.com/static/bundles/es6/LoginAndSignupPage.js/8a0b7236e203.js. Code 2147500036.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.instagram.com/static/bundles/es6/LoginAndSignupPage.js/8a0b7236e203.js. Code 2147500036.", "resource://devtools/shared/DevToolsUtils.js", 556))
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+SourceActor threw an exception: Error: Failed to fetch https://www.instagram.com/static/bundles/es6/ConsumerAsyncCommons.js/c4ca4238a0b9.js. Code 2147500036.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.instagram.com/static/bundles/es6/ConsumerAsyncCommons.js/c4ca4238a0b9.js. Code 2147500036.", "resource://devtools/shared/DevToolsUtils.js", 556))
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390144,name=PContent::Msg_ReportFrameTimingData) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+SourceActor threw an exception: Error: Failed to fetch https://www.instagram.com/accounts/login/. Code 2147500036.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.instagram.com/accounts/login/. Code 2147500036.", "resource://devtools/shared/DevToolsUtils.js", 556))
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623140950377	Marionette	INFO	Stopped listening on port 59196
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623141020762	geckodriver	INFO	Listening on 127.0.0.1:61261
+1623141023848	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileYCKChE"
+1623141024310	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileYCKChE\\search.json.mozlz4", (void 0)))
+1623141026882	Marionette	INFO	Listening on port 61269
+1623141027020	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623141027024	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:61260","noProxy":[],"sslProxy":"127.0.0.1:61260"}
+1623141073454	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://www.instagram.com/static/bundles/es6/ConsumerLibCommons.js/59cccc379c94.js, line 64: AjaxError: 
+1623141183552	geckodriver	INFO	Listening on 127.0.0.1:59092
+1623141186647	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilepY8sEh"
+1623141187095	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilepY8sEh\\search.json.mozlz4", (void 0)))
+1623141189430	Marionette	INFO	Listening on port 59101
+1623141189825	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623141189828	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59091","noProxy":[],"sslProxy":"127.0.0.1:59091"}
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+1623141338651	Marionette	INFO	Stopped listening on port 59101
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1623141435131	geckodriver	INFO	Listening on 127.0.0.1:62840
+1623141438236	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileIXYH7Q"
+1623141438685	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileIXYH7Q\\search.json.mozlz4", (void 0)))
+1623141441246	Marionette	INFO	Listening on port 62849
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623141441425	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623141441428	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:62839","noProxy":[],"sslProxy":"127.0.0.1:62839"}
+1623141520551	Marionette	INFO	Stopped listening on port 62849
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590007,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590007,name=PHttpChannel::Msg_RemoveCorsPreflightCacheEntry) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x590008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623141560017	geckodriver	INFO	Listening on 127.0.0.1:59238
+1623141563102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileC0fn2l"
+1623141563548	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileC0fn2l\\search.json.mozlz4", (void 0)))
+1623141566359	Marionette	INFO	Listening on port 59247
+1623141566791	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623141566795	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59237","noProxy":[],"sslProxy":"127.0.0.1:59237"}
+1623141729039	Marionette	INFO	Stopped listening on port 59247
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390079,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623141737622	geckodriver	INFO	Listening on 127.0.0.1:62538
+1623141740722	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile7oCIcm"
+1623141741166	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile7oCIcm\\search.json.mozlz4", (void 0)))
+1623141743742	Marionette	INFO	Listening on port 62548
+1623141743922	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623141743925	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:62537","noProxy":[],"sslProxy":"127.0.0.1:62537"}
+1623141790986	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: , line 0: uncaught exception: Object
