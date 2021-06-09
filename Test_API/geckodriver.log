@@ -412,3 +412,51 @@ JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at lin
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 [Parent 7544, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1623240361176	geckodriver	INFO	Listening on 127.0.0.1:49998
+1623240364292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofile5NgBUB"
+1623240365325	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofile5NgBUB\\search.json.mozlz4", (void 0)))
+1623240367851	Marionette	INFO	Listening on port 50006
+1623240367954	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623240367956	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:49997","noProxy":[],"sslProxy":"127.0.0.1:49997"}
+1623240434213	Marionette	INFO	Stopped listening on port 50006
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623240452280	geckodriver	INFO	Listening on 127.0.0.1:50074
+1623240455364	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofileWqyHuO"
+1623240455698	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofileWqyHuO\\search.json.mozlz4", (void 0)))
+1623240457432	Marionette	INFO	Listening on port 50085
+1623240457511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623240457513	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:50073","noProxy":[],"sslProxy":"127.0.0.1:50073"}
+console.error: services.settings: 
+  main/message-groups Signature failed  [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+1623240625591	Marionette	INFO	Stopped listening on port 50085
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623241038139	geckodriver	INFO	Listening on 127.0.0.1:53635
+1623241041215	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofilehwKU52"
+1623241041551	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofilehwKU52\\search.json.mozlz4", (void 0)))
+1623241043352	Marionette	INFO	Listening on port 53643
+1623241043383	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623241043385	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:53634","noProxy":[],"sslProxy":"127.0.0.1:53634"}
+JavaScript error: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.cTIKiXxS_RM.O/rt=j/m=qabr,q_dnp,qcwid,qmutsd,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTs7Zb87CqdFxEjh5qFvninf3C7moQ, line 1: SyntaxError: expected expression, got '<'
+console.error: services.settings: 
+  main/message-groups Signature failed  [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+JavaScript error: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.cTIKiXxS_RM.O/rt=j/m=qabr,q_dnp,qcwid,qmutsd,qapid/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTs7Zb87CqdFxEjh5qFvninf3C7moQ, line 1: SyntaxError: expected expression, got '<'
+1623241342839	Marionette	INFO	Stopped listening on port 53643
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

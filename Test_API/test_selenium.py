@@ -34,8 +34,8 @@ scraped_quotes = []
 url_list = [
     # 'https://www.facebook.com/'
     # 'http://quotes.toscrape.com/page/1/'
-    # 'https://www.google.com/'
-    'https://www.instagram.com/'
+    'https://www.google.com/'
+    # 'https://www.instagram.com/'
 ]
 
 

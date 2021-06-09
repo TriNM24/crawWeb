@@ -7,6 +7,7 @@ import os
 from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.common.by import By
+from html import unescape
 
 
 def loginFace(driver):
@@ -32,32 +33,47 @@ def loginFace(driver):
 
 def getDataFace(driver):
     print('get data' + driver.title)
-    CONT = Facebook()
-    # searchBox = driver.find_element_by_xpath(CONT.searchBox)
-    # searchBox.clear()
-    # searchBox.send_keys(CONT.nameSearch)
-    # searchBox.submit()
-    # time.sleep(2)
-    # searchBox.send_keys(Keys.ENTER)
-
-    # get all photo
-    driver.get("https://www.facebook.com/" + CONT.nameSearch + '/photos')
+    CONT = Facebook()  
+    driver.get("https://www.facebook.com/" + CONT.nameSearch)   
     try:
-        xpathImage = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[3]/div'
-        element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, xpathImage)))
-        result = driver.find_element_by_xpath(xpathImage)
-        test = result.get_attribute('innerHTML')
-        # print(test)
-        imgs = result.find_elements_by_xpath("//img[contains(@src, '')]")
-        for img in imgs:
-            print(img.get_attribute('src'))
-        # pageSource = driver.page_source
-        # bsObj = BeautifulSoup(pageSource, 'html.parser')
-        # prettyHTML = bsObj.prettify()
-        # print(prettyHTML)
+        try:
+            #try to get fanpage group name
+            elementFanpageName = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, CONT.fanpageGroupName)))
+            name = elementFanpageName.get_attribute('innerHTML')
+            print(name)
+            elementFanpageMember = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, CONT.fanpageGroupMember)))
+            member = elementFanpageMember.get_attribute('innerHTML')
+            print(member)
+        except Exception as ex:
+            try:
+                # try to get fanpage
+                elementFanpage = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, CONT.fanpageImage)))
+                image = elementFanpage.get_attribute('innerHTML')        
+                start = image.find("https://")
+                end = image.find("></image>")
+                image = image[start:end-1]
+                image = unescape(image)
+                print(image)
+                elementFanpageName = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, CONT.fanpageName)))
+                name = elementFanpageName.get_attribute('innerHTML')
+                print(name)
 
-        # links = driver.find_elements_by_xpath('//cite')
-        # for link in links:
-        #     print(link.text)
-    except Exception as e:
-        print(e)
+            except Exception as ex:
+                # get image and name of user
+                element = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, CONT.userImage)))
+                image = element.get_attribute('innerHTML')        
+                start = image.find("https://")
+                end = image.find("></image>")
+                image = image[start:end-1]
+                image = unescape(image)
+                name = element.get_attribute('aria-label') 
+                print(name)
+                print(image)
+                try:
+                    elementFollower = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.XPATH, CONT.userFollower)))
+                    follower = elementFollower.get_attribute('innerHTML')
+                    print(follower)
+                except Exception as ex:
+                    print("Do not have follwer")        
+    except Exception as ex:
+        print(ex)
