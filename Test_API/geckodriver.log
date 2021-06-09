@@ -1,0 +1,414 @@
+1623209514308	geckodriver	INFO	Listening on 127.0.0.1:52549
+1623209517402	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileqoWjLu"
+1623209518656	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileqoWjLu\\search.json.mozlz4", (void 0)))
+1623209521743	Marionette	INFO	Listening on port 52557
+1623209522261	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623209522265	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:52548","noProxy":[],"sslProxy":"127.0.0.1:52548"}
+1623209610670	geckodriver	INFO	Listening on 127.0.0.1:52624
+1623209613736	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileJ2RaEg"
+1623209614745	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileJ2RaEg\\search.json.mozlz4", (void 0)))
+1623209617150	Marionette	INFO	Listening on port 52633
+1623209617454	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623209617456	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:52623","noProxy":[],"sslProxy":"127.0.0.1:52623"}
+1623209728416	Marionette	INFO	Stopped listening on port 52633
+3209701790	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileegi3Nn"
+1623209702216	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileegi3Nn\\search.json.mozlz4", (void 0)))
+1623209704359	Marionette	INFO	Listening on port 49175
+1623209704515	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623209704518	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:49166","noProxy":[],"sslProxy":"127.0.0.1:49166"}
+console.error: services.settings: 
+  main/message-groups Signature failed  [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+1623209961907	Marionette	INFO	Stopped listening on port 49175
+1623209984126	geckodriver	INFO	Listening on 127.0.0.1:60419
+1623209987213	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilelcr4hK"
+1623209987664	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilelcr4hK\\search.json.mozlz4", (void 0)))
+1623209989953	Marionette	INFO	Listening on port 60428
+1623209990396	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623209990400	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:60418","noProxy":[],"sslProxy":"127.0.0.1:60418"}
+1623210081808	Marionette	INFO	Stopped listening on port 60428
+1623210086821	geckodriver	INFO	Listening on 127.0.0.1:60515
+1623210089902	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilei1ZGul"
+1623210090396	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilei1ZGul\\search.json.mozlz4", (void 0)))
+1623210092670	Marionette	INFO	Listening on port 60523
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623210093109	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623210093112	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:60514","noProxy":[],"sslProxy":"127.0.0.1:60514"}
+1623210234537	Marionette	INFO	Stopped listening on port 60523
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623210237022	geckodriver	INFO	Listening on 127.0.0.1:50643
+1623210240102	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile7rdvP9"
+1623210240560	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile7rdvP9\\search.json.mozlz4", (void 0)))
+1623210242759	Marionette	INFO	Listening on port 50651
+1623210242796	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623210242799	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:50642","noProxy":[],"sslProxy":"127.0.0.1:50642"}
+JavaScript error: https://genk.vn/, line 344: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013375);}else{parent.admSspPageRg.draw(2013375);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 353: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 368: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013166);}else{parent.admSspPageRg.draw(2013166);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 506: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 645: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 878: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1089: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013173);}else{parent.admSspPageRg.draw(2013173);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013174);}else{parent.admSspPageRg.draw(2013174);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013388);}else{parent.admSspPageRg.draw(2013388);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013390);}else{parent.admSspPageRg.draw(2013390);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1096: ReferenceError: AdmonDomReady is not defined
+JavaScript error: https://genk.vn/, line 1131: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1226: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1229: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1249: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013389);}else{parent.admSspPageRg.draw(2013389);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013167);}else{parent.admSspPageRg.draw(2013167);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013170);}else{parent.admSspPageRg.draw(2013170);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013171);}else{parent.admSspPageRg.draw(2013171);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1256: ReferenceError: AdmonDomReady is not defined
+JavaScript error: javascript:no, line 1: ReferenceError: no is not defined
+JavaScript error: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://media1.admicro.vn/core/admcore.js, line 1: SyntaxError: expected expression, got '<'
+console.error: "Task cancelled"
+JavaScript error: https://genk.vn/, line 344: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013375);}else{parent.admSspPageRg.draw(2013375);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 353: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 368: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013166);}else{parent.admSspPageRg.draw(2013166);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 506: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 645: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 878: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1089: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013173);}else{parent.admSspPageRg.draw(2013173);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013174);}else{parent.admSspPageRg.draw(2013174);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013388);}else{parent.admSspPageRg.draw(2013388);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013390);}else{parent.admSspPageRg.draw(2013390);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1096: ReferenceError: AdmonDomReady is not defined
+JavaScript error: https://genk.vn/, line 1131: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1226: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1229: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1249: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013389);}else{parent.admSspPageRg.draw(2013389);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013168);}else{parent.admSspPageRg.draw(2013168);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013169);}else{parent.admSspPageRg.draw(2013169);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013170);}else{parent.admSspPageRg.draw(2013170);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013171);}else{parent.admSspPageRg.draw(2013171);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1256: ReferenceError: AdmonDomReady is not defined
+JavaScript error: javascript:no, line 1: ReferenceError: no is not defined
+console.warn: "Already stopped listening to websocket events for this window."
+console.warn: "Already stopped listening to server sent events for this window."
+JavaScript error: https://media1.admicro.vn/core/admcoreext.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://deqik.com/tag/corejs/ATM4U9VN9EB7C.js, line 1: SyntaxError: expected expression, got '<'
+1623210463639	Marionette	INFO	Stopped listening on port 50651
+1623210467596	geckodriver	INFO	Listening on 127.0.0.1:49684
+1623210470683	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilecy02a0"
+1623210471158	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilecy02a0\\search.json.mozlz4", (void 0)))
+1623210473610	Marionette	INFO	Listening on port 49693
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623210473879	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623210473882	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:49683","noProxy":[],"sslProxy":"127.0.0.1:49683"}
+JavaScript error: https://genk.vn/, line 344: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013375);}else{parent.admSspPageRg.draw(2013375);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 353: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 368: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013166);}else{parent.admSspPageRg.draw(2013166);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 506: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 645: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 878: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1089: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013173);}else{parent.admSspPageRg.draw(2013173);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013174);}else{parent.admSspPageRg.draw(2013174);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013388);}else{parent.admSspPageRg.draw(2013388);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013390);}else{parent.admSspPageRg.draw(2013390);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1096: ReferenceError: AdmonDomReady is not defined
+JavaScript error: https://genk.vn/, line 1131: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1226: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1229: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1249: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013389);}else{parent.admSspPageRg.draw(2013389);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013168);}else{parent.admSspPageRg.draw(2013168);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013169);}else{parent.admSspPageRg.draw(2013169);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013170);}else{parent.admSspPageRg.draw(2013170);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013171);}else{parent.admSspPageRg.draw(2013171);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1256: ReferenceError: AdmonDomReady is not defined
+JavaScript error: javascript:no, line 1: ReferenceError: no is not defined
+JavaScript error: https://media1.admicro.vn/core/admcore.js, line 1: SyntaxError: expected expression, got '<'
+1623210540928	Marionette	INFO	Stopped listening on port 49693
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623210564944	geckodriver	INFO	Listening on 127.0.0.1:54512
+1623210568026	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileaMHwNi"
+1623210568495	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileaMHwNi\\search.json.mozlz4", (void 0)))
+1623210570927	Marionette	INFO	Listening on port 54522
+1623210571237	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623210571240	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:54511","noProxy":[],"sslProxy":"127.0.0.1:54511"}
+JavaScript error: https://genk.vn/, line 344: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013375);}else{parent.admSspPageRg.draw(2013375);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://media1.admicro.vn/core/adm_tracking.js?id=1, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://media1.admicro.vn/cms/arf-jxjxpls5.min.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://static.contineljs.com/js_boxapp/tagsponsorz_40405.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://media1.admicro.vn/cms/arf-k6hdrcmr.min.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://genk.vn/, line 353: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 368: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013166);}else{parent.admSspPageRg.draw(2013166);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://media1.admicro.vn/cms/arf-kbj6qt1x.min.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://genk.vn/, line 506: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 645: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 878: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1089: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013173);}else{parent.admSspPageRg.draw(2013173);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013174);}else{parent.admSspPageRg.draw(2013174);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013388);}else{parent.admSspPageRg.draw(2013388);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013390);}else{parent.admSspPageRg.draw(2013390);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1096: ReferenceError: AdmonDomReady is not defined
+JavaScript error: https://genk.vn/, line 1131: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1226: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1229: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1249: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013389);}else{parent.admSspPageRg.draw(2013389);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013168);}else{parent.admSspPageRg.draw(2013168);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013169);}else{parent.admSspPageRg.draw(2013169);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013170);}else{parent.admSspPageRg.draw(2013170);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013171);}else{parent.admSspPageRg.draw(2013171);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1256: ReferenceError: AdmonDomReady is not defined
+JavaScript error: https://media1.admicro.vn/cms/Arf.min.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: javascript:no, line 1: ReferenceError: no is not defined
+JavaScript error: https://genk.vn/, line 344: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013375);}else{parent.admSspPageRg.draw(2013375);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 353: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 368: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013166);}else{parent.admSspPageRg.draw(2013166);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 506: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 645: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 878: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1089: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013173);}else{parent.admSspPageRg.draw(2013173);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013174);}else{parent.admSspPageRg.draw(2013174);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013388);}else{parent.admSspPageRg.draw(2013388);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013390);}else{parent.admSspPageRg.draw(2013390);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1096: ReferenceError: AdmonDomReady is not defined
+JavaScript error: https://genk.vn/, line 1131: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1226: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1229: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1249: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013389);}else{parent.admSspPageRg.draw(2013389);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013168);}else{parent.admSspPageRg.draw(2013168);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013169);}else{parent.admSspPageRg.draw(2013169);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013170);}else{parent.admSspPageRg.draw(2013170);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013171);}else{parent.admSspPageRg.draw(2013171);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 1256: ReferenceError: AdmonDomReady is not defined
+JavaScript error: javascript:no, line 1: ReferenceError: no is not defined
+JavaScript error: https://media1.admicro.vn/core/admcoreext.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://adminplayer.sohatv.vn/resource/init-script/playerInitScript.js, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1623210973634	Marionette	INFO	Stopped listening on port 54522
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623210989111	geckodriver	INFO	Listening on 127.0.0.1:53115
+1623210992173	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilegFiwmZ"
+1623210992643	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilegFiwmZ\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1623211008476	Marionette	INFO	Listening on port 53123
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623211011035	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623211011039	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:53114","noProxy":[],"sslProxy":"127.0.0.1:53114"}
+JavaScript error: https://genk.vn/, line 344: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013375);}else{parent.admSspPageRg.draw(2013375);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 353: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 368: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013166);}else{parent.admSspPageRg.draw(2013166);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://genk.vn/, line 506: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 645: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 878: ReferenceError: _admloadJs is not defined
+JavaScript error: https://genk.vn/, line 1089: ReferenceError: _admloadJs is not defined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013173);}else{parent.admSspPageRg.draw(2013173);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013174);}else{parent.admSspPageRg.draw(2013174);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013388);}else{parent.admSspPageRg.draw(2013388);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: javascript:if(typeof(admSspPageRg)!='undefined'){admSspPageRg.draw(2013390);}else{parent.admSspPageRg.draw(2013390);}, line 1: TypeError: can't access property "draw", parent.admSspPageRg is undefined
+JavaScript error: https://media1.admicro.vn/core/adm_tracking.js?v=1, line 1: SyntaxError: expected expression, got '<'
+JavaScript error: https://media1.admicro.vn/core/ssppage.js, line 1: SyntaxError: expected expression, got '<'
+1623211045712	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1623211522691	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+1623211564114	Marionette	INFO	Stopped listening on port 53123
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623211566180	geckodriver	INFO	Listening on 127.0.0.1:56882
+1623211569250	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile24wTjf"
+1623211569733	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile24wTjf\\search.json.mozlz4", (void 0)))
+1623211572405	Marionette	INFO	Listening on port 56891
+1623211572461	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623211572464	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:56881","noProxy":[],"sslProxy":"127.0.0.1:56881"}
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://media1.admicro.vn/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://adi.admicro.vn/adt/cpc/tvcads/files/js/core/adm-tracking.js?v=0.8490030413974445, line 3: unreachable code after return statement
+JavaScript warning: https://adi.admicro.vn/adt/cpc/tvcads/files/js/core/adm-tracking.js?v=0.8490030413974445, line 3: unreachable code after return statement
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://genk.mediacdn.vn/web_js/home-20210222v1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://static.contineljs.com/core/admcoreext.js, line 357: unreachable code after return statement
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1623211940595	Marionette	INFO	Stopped listening on port 56891
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623212047461	geckodriver	INFO	Listening on 127.0.0.1:57727
+1623212050563	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileTQpuEf"
+1623212051029	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileTQpuEf\\search.json.mozlz4", (void 0)))
+1623212053624	Marionette	INFO	Listening on port 57739
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623212053770	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623212053774	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:57726","noProxy":[],"sslProxy":"127.0.0.1:57726"}
+JavaScript error: https://www.gstatic.com/og/_/js/k=og.qtm.en_US.Hro-376IUQs.O/rt=j/m=qabr,q_d,qcwid,qmutsd,qapid,qald/exm=qaaw,qadd,qaid,qein,qhaw,qhbr,qhch,qhga,qhid,qhin,qhpr/d=1/ed=1/rs=AA2YrTupCD1yahFrlnFpCV-p3YR6ik2eHg, line 1: SyntaxError: expected expression, got '<'
+console.error: services.settings: 
+  main/message-groups Signature failed  [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1623212581119	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1623213664205	Marionette	INFO	Stopped listening on port 57739
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623214940462	geckodriver	INFO	Listening on 127.0.0.1:50542
+1623214943572	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile7EuPJ5"
+1623214944056	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile7EuPJ5\\search.json.mozlz4", (void 0)))
+1623214946534	Marionette	INFO	Listening on port 50551
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+1623214946813	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623214946816	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:50541","noProxy":[],"sslProxy":"127.0.0.1:50541"}
+JavaScript error: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.gapi.en.vQiXRrxCe40.O/m=gapi_iframes,googleapis_client/rt=j/sv=1/d=1/ed=1/rs=AHpOoo-wBrxoiAJAWI5rmBYJxS8iVgTdFg/cb=gapi.loaded_0, line 1: TypeError: gapi.loaded_0 is not a function
+JavaScript error: https://www.google.com/xjs/_/js/k=xjs.s.en_US.0oWug_QxHUg.O/ck=xjs.s.epIJv3BtJS8.L.W.O/am=QBFAAAAAAAAAAAAEFAgAAACMAQAAAAAAAAoBABKDAwIAYGgeAQMAAAIAOAIKEIURIAAAAGAC-wEC_psAgEuwCQMAAAAAACAAl0BGqQGJggACAAAAkKmVUwAhAAQ/d=1/exm=cdos,csi,d,dpf,hsm,jsa/ed=1/dg=2/br=1/rs=ACT90oEGEHVtJTGaJGCEkMt3oUfsz_OKJA/m=BLvsRb,NBZ7u,aa,abd,async,dvl,fEVMic,ifl,mUpTid,mu,sb_wiz,sf,sonic,spch,xz7cCd?xjs=s1, line 2: ReferenceError: s_h is not defined
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1623220107287	Marionette	INFO	Stopped listening on port 50551
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623220154489	geckodriver	INFO	Listening on 127.0.0.1:54871
+1623220157626	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofilekLYNl5"
+1623220158113	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofilekLYNl5\\search.json.mozlz4", (void 0)))
+1623220160879	Marionette	INFO	Listening on port 54881
+1623220161322	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623220161325	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:54870","noProxy":[],"sslProxy":"127.0.0.1:54870"}
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://www.instagram.com/static/bundles/metro/ConsumerLibCommons.js/cfb915b90e9c.js, line 193: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.instagram.com/static/bundles/metro/ConsumerLibCommons.js/cfb915b90e9c.js, line 193: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1623220317553	Marionette	INFO	Stopped listening on port 54881
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623220321980	geckodriver	INFO	Listening on 127.0.0.1:59575
+1623220325078	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileHY6OW1"
+1623220325545	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileHY6OW1\\search.json.mozlz4", (void 0)))
+1623220327796	Marionette	INFO	Listening on port 59583
+1623220328289	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623220328291	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59574","noProxy":[],"sslProxy":"127.0.0.1:59574"}
+1623220385265	Marionette	INFO	Stopped listening on port 59583
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623220390303	geckodriver	INFO	Listening on 127.0.0.1:59634
+1623220393421	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofile0XysH1"
+1623220393868	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofile0XysH1\\search.json.mozlz4", (void 0)))
+1623220396396	Marionette	INFO	Listening on port 59100
+1623220396638	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623220396641	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59633","noProxy":[],"sslProxy":"127.0.0.1:59633"}
+1623220485049	Marionette	INFO	Stopped listening on port 59100
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623220496263	geckodriver	INFO	Listening on 127.0.0.1:49501
+1623220499393	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\cygwin64\\tmp\\rust_mozprofileCWkZ1q"
+1623220499846	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\cygwin64\\tmp\\rust_mozprofileCWkZ1q\\search.json.mozlz4", (void 0)))
+1623220502100	Marionette	INFO	Listening on port 49509
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390146,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390099,name=PContent::Msg_InitBackground) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D5,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+1623220502571	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623220502574	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:49500","noProxy":[],"sslProxy":"127.0.0.1:49500"}
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1623220715458	Marionette	INFO	Stopped listening on port 49509
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 7544, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
