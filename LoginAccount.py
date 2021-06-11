@@ -12,22 +12,34 @@ from html import unescape
 import Constant_intagram as constant
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
+import re
+
+
+def cleanhtml(raw_html):
+    cleanr = re.compile('<.*?>')
+    cleantext = re.sub(cleanr, '', raw_html)
+    return cleantext
 
 
 def loginIntagram(driver):
     constant = Intagram()
     print('Login')
-    xpathCheck = "//div[text()='Log In']"
     try:
-        tableInfor = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, xpathCheck)))
-        mail = driver.find_element_by_xpath(constant.xpathMail)
+        mail = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, constant.xpathMail)))
         mail.clear()
         mail.send_keys(constant.userName)
         passElement = driver.find_element_by_xpath(constant.xpathPass)
         passElement.clear()
         passElement.send_keys(constant.passWord)
-
+        # try to click button Accept all cookies
+        try:
+            btnAcceptAll = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.XPATH, constant.xpathAcceptAll)))
+            print('click button Accept All cookies')
+            btnAcceptAll.click()
+        except Exception as ex:
+            print("Do not have button Accept all cookies")
         buttonLogin = driver.find_element_by_xpath(constant.xpathButtonLogin)
         print('Submit button ' + buttonLogin.text)
         buttonLogin.click()
@@ -124,5 +136,33 @@ def getDataFace(driver, nameSearch):
                     print(follower)
                 except Exception as ex:
                     print("Do not have follwer")
+    except Exception as ex:
+        print(ex)
+
+
+def getInfoIntagram(driver, nameSearch):
+    print('get data' + driver.title)
+    CONT = Intagram()
+    driver.get("https://www.instagram.com/" + nameSearch)
+    try:
+        try:
+            elementImage = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.XPATH, CONT.xpathImage)))
+            image = elementImage.get_attribute('src')
+            print(image)
+            elementName = driver.find_element_by_xpath(CONT.xpathName)
+            name = elementName.get_attribute('innerHTML')
+            print(name)
+            elementInformations = driver.find_element_by_xpath(CONT.xpathInfo)
+            elementInfos1 = elementInformations.find_elements_by_xpath(
+                "./li/span")
+            elementInfos2 = elementInformations.find_elements_by_xpath(
+                "./li/a")
+            for elementInfo1 in elementInfos1:
+                print(cleanhtml(elementInfo1.get_attribute('innerHTML')))
+            for elementInfo2 in elementInfos2:
+                print(cleanhtml(elementInfo2.get_attribute('innerHTML')))
+        except Exception as ex:
+            print("Error get info {}".format(ex))
     except Exception as ex:
         print(ex)
