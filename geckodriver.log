@@ -704,3 +704,84 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofilenFujh8\\search.json.mozlz4", (void 0)))
 1623261459818	Marionette	INFO	Listening on port 51781
 1623261459863	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1623261535701	Marionette	INFO	Stopped listening on port 51781
+1624463372724	geckodriver	INFO	Listening on 127.0.0.1:52442
+1624463375764	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofileaFCQVr"
+1624463445055	geckodriver	INFO	Listening on 127.0.0.1:59980
+1624463448124	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofileWXszwN"
+1624463448451	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofileWXszwN\\search.json.mozlz4", (void 0)))
+1624463450406	Marionette	INFO	Listening on port 59988
+1624463450783	Marionette	WARN	TLS certificate errors will be ignored for this session
+1624463519093	Marionette	INFO	Stopped listening on port 59988
+1624463592379	geckodriver	INFO	Listening on 127.0.0.1:58202
+1624463595452	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofilebYTPtm"
+1624463595763	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofilebYTPtm\\search.json.mozlz4", (void 0)))
+1624463597561	Marionette	INFO	Listening on port 58211
+1624463597625	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: services.settings: main/doh-config Signature verified failed. Retry from scratch
+console.warn: services.settings: main/doh-providers Signature verified failed. Retry from scratch
+1626625150710	geckodriver	INFO	Listening on 127.0.0.1:52231
+1626625153792	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofilecIH9Za"
+1626625154648	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofilecIH9Za\\search.json.mozlz4", (void 0)))
+1626625157076	Marionette	INFO	Listening on port 52239
+1626625157485	Marionette	WARN	TLS certificate errors will be ignored for this session
+1626625157488	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:52230","noProxy":[],"sslProxy":"127.0.0.1:52230"}
+1626625177056	Marionette	INFO	Stopped listening on port 52239
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1626625306375	geckodriver	INFO	Listening on 127.0.0.1:60887
+1626625309452	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofilexOTXQp"
+1626625309740	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofilexOTXQp\\search.json.mozlz4", (void 0)))
+1626625311435	Marionette	INFO	Listening on port 60897
+1626625311511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1626625311513	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:60886","noProxy":[],"sslProxy":"127.0.0.1:60886"}
+JavaScript error: , line 0: uncaught exception: Object
+1626625496764	Marionette	INFO	Stopped listening on port 60897
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+"--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofileZ1DlMI"
+1626625367354	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofileZ1DlMI\\search.json.mozlz4", (void 0)))
+1626625369015	Marionette	INFO	Listening on port 61013
+1626625369103	Marionette	WARN	TLS certificate errors will be ignored for this session
+1626625369105	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:61000","noProxy":[],"sslProxy":"127.0.0.1:61000"}
+JavaScript error: , line 0: uncaught exception: Object
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1626625464469	Marionette	INFO	Stopped listening on port 61013
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1626625822614	geckodriver	INFO	Listening on 127.0.0.1:56749
+1626625825715	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\DOWNLO~1\\AppData\\Local\\Temp\\rust_mozprofileezTQyz"
+1626625825982	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\downloadman\\AppData\\Local\\Temp\\rust_mozprofileezTQyz\\search.json.mozlz4", (void 0)))
+1626625827615	Marionette	INFO	Listening on port 56757
+1626625827775	Marionette	WARN	TLS certificate errors will be ignored for this session
+1626625827777	Marionette	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:56748","noProxy":[],"sslProxy":"127.0.0.1:56748"}
+JavaScript error: , line 0: uncaught exception: Object
+SourceActor threw an exception: [Exception... "Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]"  nsresult: "0x80470002 (NS_BASE_STREAM_CLOSED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: onResponse :: line 567"  data: no]
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:567:34
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 567, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 567: NS_BASE_STREAM_CLOSED: Component returned failure code: 0x80470002 (NS_BASE_STREAM_CLOSED) [nsIInputStream.available]
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1626625891627	Marionette	INFO	Stopped listening on port 56757
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

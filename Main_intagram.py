@@ -24,7 +24,9 @@ def interceptorRequest(request):
 
 
 print("_________start_________")
-driver = webdriver.Firefox()
+profile = webdriver.FirefoxProfile()
+profile.set_preference('intl.accept_languages', 'en-US, en')
+driver = webdriver.Firefox(firefox_profile=profile)
 driver.request_interceptor = interceptorRequest
 # init domain
 driver.get("https://www.instagram.com/")
@@ -48,8 +50,6 @@ try:
         buttonNotNowNotification).perform()
 except Exception as ex:
     print("Try to click button not allow notification: {}".format(ex))
-
-quit()
 
 xpathCheck = "//div[text()='Log In']"
 try:
