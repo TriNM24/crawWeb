@@ -1,8 +1,8 @@
+from MyConstants import Intagram
 import sys
 from seleniumwire import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 import pickle
-import Constant_intagram as constant
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
@@ -11,6 +11,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 import pickle
 import os
+import FirefoxUlties
+import LoginAccount
 # import loginaccount as login
 # set endcoding
 sys.stdin.reconfigure(encoding='utf-8')
@@ -24,12 +26,15 @@ def interceptorRequest(request):
 
 
 print("_________start_________")
+
 profile = webdriver.FirefoxProfile()
 profile.set_preference('intl.accept_languages', 'en-US, en')
 driver = webdriver.Firefox(firefox_profile=profile)
+constant = Intagram()
+input("Press to get data after brower is ready")
 driver.request_interceptor = interceptorRequest
 # init domain
-driver.get("https://www.instagram.com/")
+driver.get("https://www.instagram.com/accounts/login/")
 try:
     cookies = pickle.load(open(constant.cookies_file, "rb"))
     driver.delete_all_cookies()
@@ -41,8 +46,14 @@ except Exception as e:
 # reload to login via cookies
 driver.get("https://www.instagram.com/accounts/login/")
 
+if 'login' in driver.title.lower():
+    LoginAccount.loginIntagram(driver)
+else:
+    print('Allready login')
+
+# click button not allow notification if it popup
 try:
-    buttonNotNowNotification = WebDriverWait(driver, constant.defautWait).until(
+    buttonNotNowNotification = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, constant.notNowButtonNotification)))
     print("click butotn not now allow notification")
     action = ActionChains(driver)
@@ -93,6 +104,7 @@ except NoSuchElementException as noelementex:
     print('Allready login')
 except Exception as ex:
     print("Unknow error:{}".format(ex))
+LoginAccount.getInfoIntagram(driver, constant.nameSearch)
 
 input('Press to exit')
 driver.close()

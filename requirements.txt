@@ -1,5 +1,6 @@
 selenium
 selenium-wire
+fake-useragent
 
 nguyenminhtri644
 Tri123456

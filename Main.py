@@ -3,12 +3,17 @@ from time import time
 from selenium import webdriver
 import LoginAccount
 import pickle
+from MyConstants import Facebook
+from fake_useragent import UserAgent
+import FirefoxUlties
 
 # set endcoding
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
 
-driver = webdriver.Firefox()
+
+driver = FirefoxUlties.createFirefox()
+input("Press to get data after brower is ready")
 # init domain
 driver.get("https://www.facebook.com/")
 # try:
@@ -28,9 +33,8 @@ driver.get("https://www.facebook.com/")
 # else:
 #     print('Allready login')
 
-LoginAccount.getDataFace(driver)
+CONT = Facebook()
+LoginAccount.getDataFace(driver, CONT.nameSearch)
 input('Press to exit')
 driver.close()
 quit()
-
-
