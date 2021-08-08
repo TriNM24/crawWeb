@@ -13,6 +13,9 @@ import pickle
 import os
 import FirefoxUlties
 import LoginAccount
+from fake_useragent import UserAgent
+from selenium.webdriver.firefox.options import Options
+
 # import loginaccount as login
 # set endcoding
 sys.stdin.reconfigure(encoding='utf-8')
@@ -26,9 +29,18 @@ def interceptorRequest(request):
 
 
 print("_________start_________")
+try:
+    ua = UserAgent()
+    # update saved database
+    # ua.update()
+    user_agent = ua.firefox    
+except Exception as ex:
+        print("UserAgent have error {}".format(ex))
+options = Options()
+options.add_argument(f'user-agent={user_agent}')
 profile = webdriver.FirefoxProfile()
 profile.set_preference('intl.accept_languages', 'en-US, en')
-driver = webdriver.Firefox(firefox_profile=profile)
+driver = webdriver.Firefox(firefox_profile=profile, options=options)
 constant = Intagram()
 input("Press to get data after brower is ready")
 driver.request_interceptor = interceptorRequest
@@ -104,7 +116,7 @@ except NoSuchElementException as noelementex:
 except Exception as ex:
     print("Unknow error:{}".format(ex))
 
-LoginAccount.getInfoIntagram(driver, constant.nameSearch)
+LoginAccount.getInstagramPostDetail(driver, "https://www.instagram.com/p/CRtmh-rjaCR/")
 
 input('Press to exit')
 driver.close()

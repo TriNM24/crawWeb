@@ -7,7 +7,7 @@ import time
 def createFirefox():
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
     try:
-        ua = UserAgent(cache=True)
+        ua = UserAgent()
         user_agent = ua.firefox
         # update saved database
         # ua.update()
@@ -21,6 +21,7 @@ def createFirefox():
     # options.add_argument("--disable-gpu")
     options.add_argument(f'user-agent={user_agent}')
     profile = webdriver.FirefoxProfile()
+    profile.set_preference('intl.accept_languages', 'en-US, en')
     profile.set_preference("general.useragent.override", user_agent)
     profile.add_extension(
         extension='./extensions/touch_vpn_secure_vpn_proxy_for_unlimited_access-4.2.1-fx.xpi')

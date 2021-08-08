@@ -3,7 +3,7 @@ class Facebook:
     xpathPass = '//*[@id="pass"]'
     xpathSubmit = '/html/body/div[1]/div[2]/div[1]/div/div/div/div[2]/div/div[1]/form/div[2]'
     facebookUser = '0582004489'
-    facebookPass = 'Test123456'
+    facebookPass = 'HaoThien1991'
     searchBox = '/html/body/div[1]/div/div[1]/div/div[2]/div[2]/div/div/div/div/div/label/input'
     # nameSearch = 'tri.nguyen.73'
     # nameSearch = 'tuanva186'
@@ -33,3 +33,4 @@ class Intagram:
     xpathImage = "/html/body/div[1]/section/main/div/header/div/div/span/img"
     xpathName = "/html/body/div[1]/section/main/div/header/section/div[1]/h2"
     xpathInfo = "/html/body/div[1]/section/main/div/header/section/ul"
+    defautWait = 5
