@@ -220,7 +220,7 @@ def getPosts(driver,idTiktokPost, idProfile, logFileName):
             imageData = []
 
             try:                
-                imageElement = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,".//img")))                
+                imageElement = WebDriverWait(elementPost, 10).until(EC.presence_of_element_located((By.XPATH,".//img")))                
                 imageValue = imageElement.get_attribute('src')
                 # start = imageValue.find('url("')
                 # end = imageValue.find('")')
