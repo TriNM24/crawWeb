@@ -1,7 +1,7 @@
 import os
 # from seleniumwire import webdriver as webdriverwire
 from selenium import webdriver
-# from seleniumwire import webdriver
+from seleniumwire import webdriver as webdriverwire
 
 from selenium.webdriver.remote.webdriver import WebDriver
 from subprocess import Popen
@@ -165,7 +165,8 @@ def build_driver():
 def build_driver2():
     try:
         
-        profile = webdriver.FirefoxProfile('C:/Users/Administrator/AppData/Roaming/Mozilla/Firefox/Profiles/msmpjo8k.default-esr')
+        # profile = webdriver.FirefoxProfile('C:/Users/Administrator/AppData/Roaming/Mozilla/Firefox/Profiles/msmpjo8k.default-esr')
+        profile = webdriver.FirefoxProfile('C:/Users/downloadman/AppData/Roaming/Mozilla/Firefox/Profiles/be4a7255.default-release')
         profile.set_preference("dom.webdriver.enabled", False)
         profile.set_preference('useAutomationExtension', False)
         profile.set_preference('intl.accept_languages', 'en-US, en')
@@ -182,6 +183,33 @@ def build_driver2():
         profile.update_preferences()
         desired = DesiredCapabilities.FIREFOX
         driver = webdriver.Firefox(firefox_profile=profile,desired_capabilities=desired)
+        # close other tabs
+        ulties.closeOtherTabs(driver)
+        return driver
+    except Exception as ex:
+        writeLog('Error while build_driver2:{}'.format(ex))
+
+def build_driverwire():
+    try:
+        
+        # profile = webdriver.FirefoxProfile('C:/Users/Administrator/AppData/Roaming/Mozilla/Firefox/Profiles/msmpjo8k.default-esr')
+        profile = webdriverwire.FirefoxProfile('C:/Users/downloadman/AppData/Roaming/Mozilla/Firefox/Profiles/be4a7255.default-release')
+        profile.set_preference("dom.webdriver.enabled", False)
+        profile.set_preference('useAutomationExtension', False)
+        profile.set_preference('intl.accept_languages', 'en-US, en')
+
+        # options = Options()
+        # options.add_argument("start-maximized")
+        # options.add_argument("disable-infobars")
+        # options.add_argument("--disable-extensions")
+        # options.add_argument('--no-sandbox')
+        # options.add_argument('--disable-application-cache')
+        # options.add_argument('--disable-gpu')
+        # options.add_argument("--disable-dev-shm-usage")
+        
+        profile.update_preferences()
+        desired = DesiredCapabilities.FIREFOX
+        driver = webdriverwire.Firefox(firefox_profile=profile,desired_capabilities=desired)
         # close other tabs
         ulties.closeOtherTabs(driver)
         return driver

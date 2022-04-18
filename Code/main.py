@@ -37,7 +37,7 @@ def sendMessageToTelegram(message, mJobTelegram: JobQueue):
 
 def main(args):
     parser = argparse.ArgumentParser(description="Do something.")
-    parser.add_argument("-f", "--function", type=float, default=4, required=False)
+    parser.add_argument("-f", "--function", type=float, default=6, required=False)
     args = parser.parse_args(args)
 
     print("input:{}".format(args.function))
@@ -286,7 +286,7 @@ def tiktokInfor():
 
 def getInstagramPost():
     global mDriver
-    mDriver = ulties.build_driver2()
+    mDriver = ulties.build_driverwire()
     instagramUlties.getPostDetail(mDriver,'https://www.instagram.com/p/CZ9IxIgJ8as/')
 
     mDriver.close()
