@@ -337,3 +337,66 @@ def uploadDataPost(data:DataPost, logFileName):
     responsePost = requests.post(api_url_post, json=data.toJson(), headers=headers)    
     writeLogWithName(logFileName,'Json response post:{}'.format(responsePost.json()))
     writeLogWithName(logFileName,'Status response:{}'.format(responsePost.status_code))
+
+def getPostDetail(driver, linkPost):
+    try:            
+        driver.get(linkPost)            
+    except Exception as ex:
+        time.sleep(3)
+        driver.get(linkPost)
+
+    # testt
+    # time.sleep(getRando
+    # mTime())
+    time.sleep(5)
+    #try to close verify
+    try:
+        elementCloseVerify = WebDriverWait(driver, 5).until(
+        EC.presence_of_element_located((By.XPATH, CONT.xpathCloseVerify)))
+        elementCloseVerify.click()
+        print("click close verify")        
+    except Exception as ex:
+        print("error get close verify: {}".format(ex))
+
+    try:
+        postElement = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//div[@data-e2e="recommend-list-item-container"][1]')))
+        
+        # try to get image
+        try:
+            imageElement = postElement.find_element(By.XPATH,'.//div[@data-e2e="feed-video"]//img')
+            image = imageElement.get_attribute('src')
+            print("image:{}".format(image))
+        except Exception as ex:
+            print("Error get image:{}".format(ex))    
+
+        #try to get like
+        try:
+            likeElement = postElement.find_element(By.XPATH,'.//*[@data-e2e="like-count"]')
+            like = likeElement.get_attribute('innerHTML')
+            like = getRealNumber(like)
+            print("like:{}".format(like))
+        except Exception as ex:
+            print("Error get like:{}".format(ex))   
+
+        #try to get comment
+        try:
+            commentElement = postElement.find_element(By.XPATH,'.//*[@data-e2e="comment-count"]')
+            comment = commentElement.get_attribute('innerHTML')
+            comment = getRealNumber(comment)
+            print("comment:{}".format(comment))
+        except Exception as ex:
+            print("Error get comment:{}".format(ex))
+
+        #try to get share
+        try:
+            shareElement = postElement.find_element(By.XPATH,'.//*[@data-e2e="share-count"]')
+            share = shareElement.get_attribute('innerHTML')
+            share = getRealNumber(share)
+            print("share:{}".format(share))
+        except Exception as ex:
+            print("Error get share:{}".format(ex))
+
+        # image = imageElement.get_attribute('src')
+        # print("image:{}".format(image))
+    except Exception as ex:
+        print("Error get post:{}".format(ex))
