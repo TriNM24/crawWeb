@@ -320,3 +320,61 @@ def uploadDataPost(data:DataPost, logFileName):
     writeLogWithName(logFileName,'Json response post:{}'.format(responsePost.json()))
     writeLogWithName(logFileName,'Status response:{}'.format(responsePost.status_code))
 
+def getPostDetail(driver, linkPost):
+    try:            
+        driver.get(linkPost)            
+    except Exception as ex:
+        time.sleep(3)
+        driver.get(linkPost)
+
+    # testt
+    # time.sleep(getRando
+    # mTime())
+    time.sleep(5)
+
+    try:
+        try:
+            timeElement = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, CONT.xpathTime)))
+            timeValue = timeElement.get_attribute('innerHTML')      
+            print('timeValue:{}'.format(timeValue))
+        except Exception as ex:
+            print("Error get time:{}".format(ex))
+
+        try:               
+            viewElement = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, CONT.xpathView)))
+            viewValue = viewElement.get_attribute('innerHTML')
+            print('viewValue:{}'.format(viewValue))            
+        except Exception as ex:
+            print("Error get view:{}".format(ex))
+
+        try:
+            likeElement = driver.find_element(By.XPATH,'//ytd-video-primary-info-renderer//ytd-menu-renderer//yt-formatted-string[contains(@aria-label,"likes")]')
+            likeValue = likeElement.get_attribute('innerHTML')    
+            print('likeValue:{}'.format(likeValue))                                    
+        except Exception as ex:
+            print("Error get like:{}".format(ex))
+
+        try:
+            commentElement = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, CONT.xpathComment)))
+            commentValue = commentElement.get_attribute('innerHTML')
+            print('commentValue:{}'.format(commentValue))        
+        except Exception as ex:
+            print("Error get comment:{}".format(ex))
+
+            #get hashtag
+        dataHasgTag = []
+        try:
+            hashTagElements = driver.find_elements_by_xpath(CONT.xpathHashTag)
+            for hashTagElement in hashTagElements:
+                hashtag = hashTagElement.get_attribute('innerHTML')
+                hashtag = cleanhtml(hashtag)
+                dataHasgTag.append(hashtag)
+                print('hashtag:{}'.format(hashtag))                                
+        except Exception as ex:                
+            print("Error get hashtag:{}".format(ex))
+
+    except Exception as ex:
+        print("Error get post:{}".format(ex))
+
