@@ -1,4 +1,5 @@
 import argparse
+from asyncio.windows_events import NULL
 from os import replace
 import sys
 from time import sleep, time
@@ -37,7 +38,7 @@ def sendMessageToTelegram(message, mJobTelegram: JobQueue):
 
 def main(args):
     parser = argparse.ArgumentParser(description="Do something.")
-    parser.add_argument("-f", "--function", type=float, default=7, required=False)
+    parser.add_argument("-f", "--function", type=float, default=8, required=False)
     args = parser.parse_args(args)
 
     print("input:{}".format(args.function))
@@ -128,7 +129,12 @@ def facebookInfor():
             print('link emply')
         else:
             for link in item['facebook']:
-                linkGet = link['link'].replace('www', 'm')
+                linkGet = link['link']
+                if("www" in linkGet):
+                    linkGet = linkGet.replace('www', 'm')
+                else:
+                    linkGet = linkGet.replace('facebook', 'm.facebook')
+                    
                 facebookUlties.getProfileMobile(mDriver, linkGet, item['id'], link['id'], mJobTelegram)
     #stop bot
     updater.stop()
@@ -297,6 +303,7 @@ def getTiktokPost():
     mDriver = ulties.build_driver2()
     tiktokUlties.getPostDetail(mDriver,'https://www.tiktok.com/@hoanghieptiktok/video/7087881559507881242')
     input("aaaa:")
+    
     mDriver.close()
     mDriver.quit()    
 
@@ -308,14 +315,17 @@ def manualLoginTiktok():
     tiktokUlties.manualLoginAndSaveCokies(mDriver)
 
 def testLog():
-    testString = "Vũ Trần Kim Nhã và 2.2M người khác"
-    # Vũ Trần Kim Nhã và 22K người khác
-    # Vũ Trần Kim Nhã và 2.2k người khác
-    # Vũ Trần Kim Nhã và 2.2M người khác
-    # Vũ Trần Kim Nhã và 123 người khác
-
-    number = ulties.getRealNumber(testString)
-    print(number)    
+    test = "https://www.facebook.com/suni.halinh"
+    linkGet = test
+    if("www" in linkGet):
+        linkGet = linkGet.replace('www', 'm')
+    else:
+        linkGet = linkGet.replace('facebook', 'm.facebook')
+    
+    test = "https://facebook.com/suni.halinh"
+    # global mDriver
+    # mDriver = ulties.build_driver2()
+    # facebookUlties.getProfileMobile(mDriver, "https://m.facebook.com/suni.halinh", 1, 1, NULL)
 
 class extraData:
     follower = 123456
