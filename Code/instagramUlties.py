@@ -267,7 +267,7 @@ def getInstagramPost(driver, idInstagramPost, idProfile, logFileName, mJobTelegr
             time.sleep(2)            
             try:
                 # get like        
-                likeElement = elementPost.find_element(By.XPATH,"/a/div[3]/ul/li[1]/div")
+                likeElement = elementPost.find_element(By.XPATH,"./a/div[3]/ul/li[1]/div")
                 like = likeElement.get_attribute('innerHTML')            
                 dataPost.like = getRealNumber(like)
             except Exception as ex:
