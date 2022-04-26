@@ -307,6 +307,15 @@ def getInstagramPost(driver, idInstagramPost, idProfile, logFileName, mJobTelegr
                 timeData = timeElement.get_attribute('innerHTML')
                 dataPost.post_time = timeData
 
+                try:
+                    # get content
+                    commentContent = driver.find_element(By.XPATH,'//div/ul/div[@tabindex="0" and @role="button"]//div/div/span')
+                    content = commentContent.get_attribute('innerHTML')            
+                    dataPost.content = cleanhtml(content)
+                except Exception as ex:
+                    writeLogWithName(logFileName,'Error get content:{}'.format(ex))
+                    dataPost.content = "can not get content"
+
                 #get hashtag
                 dataHasgTag = []
                 try:
