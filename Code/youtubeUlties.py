@@ -179,6 +179,7 @@ class DataPost:
     influencer_platform_id = ''
     link = ''
     content = ''
+    content_type = 'video'#photo,video,album,gif,livestream,story
     image = []
     video = []
     like = ''
