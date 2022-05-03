@@ -226,6 +226,7 @@ class DataPost:
     influencer_platform_id = ''
     link = ''
     content = ''
+    content_type = ''#photo,video,album,gif,livestream,story
     image = []
     video = []
     like = ''
@@ -327,6 +328,13 @@ def getInstagramPost(driver, idInstagramPost, idProfile, logFileName, mJobTelegr
                     dataPost.tags = dataHasgTag
                 except Exception as ex:                
                     writeLogWithName(logFileName,'Error get hashtag:{}'.format(ex))
+
+                #detect image or video
+                try:
+                    videoElement = driver.find_elements_by_xpath('//video')
+                    dataPost.content_type = "video"
+                except Exception as ex:                
+                    dataPost.content_type = "photo"
 
                 time.sleep(getRandomTimeShort())
                 # close
