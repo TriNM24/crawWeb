@@ -259,6 +259,7 @@ class FaceBookPost:
     influencer_platform_id = ''
     link = ''
     content = ''
+    content_type = 'video'#photo,video,album,gif,livestream,story
     image = []
     video = []
     like = ''
@@ -383,7 +384,8 @@ def getPostsFromProfile(driver, logFileName, mJobTelegram: JobQueue, link, idFac
                     start = image.find('url("')
                     end = image.find('")')
                     image = image[start + 5:end]                    
-                    dataImage.append(image)                
+                    dataImage.append(image)
+                dataPost.content_type = "photo"                
             except Exception as ex:                
                 writeLogWithName(logFileName,'Error get images:{}'.format(ex))
                 #try to get video
@@ -393,6 +395,7 @@ def getPostsFromProfile(driver, logFileName, mJobTelegram: JobQueue, link, idFac
                     jsonVideo = json.loads(videoData)
                     videoLink = jsonVideo['src']
                     dataVideo.append(videoLink)
+                    dataPost.content_type = "video"
                 except Exception as ex:                    
                     writeLogWithName(logFileName,'Error get videoLink:{}'.format(ex))
                     # try to get link share
@@ -400,6 +403,7 @@ def getPostsFromProfile(driver, logFileName, mJobTelegram: JobQueue, link, idFac
                         shareElement = inforElement.find_element_by_xpath('./div/div[2]/section/a')
                         shareLink = shareElement.get_attribute('href')
                         dataPost.content = '{}\n{}'.format(dataPost.content,shareLink)
+                        dataPost.content_type = "share"
                     except Exception as ex:                        
                         writeLogWithName(logFileName,'Error get shareLink:{}'.format(ex))
 
